@@ -1,0 +1,1559 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+
+    <script src="libs/js/pace.min.js"></script>
+    <link rel="stylesheet" href="libs/css/pace-theme-default.min.css">
+
+    <link rel="preload" href="./fonts/Icons.otf" as="font" crossorigin="anonymous">
+    <link rel="stylesheet" href="libs/css/aos.css">
+    <link rel="stylesheet" href="libs/css/fancybox.css">
+    <link rel="stylesheet" href="libs/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="libs/css/jquery.modal.min.css">
+    <link rel="stylesheet" href="libs/css/scale.css">
+    <link rel="stylesheet" href="libs/css/toastr.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="libs/css/lightgallery-bundle.css">
+    <title>Instigators | О Услуга</title>
+</head>
+
+<body>
+    <script>
+        var array = {};
+        array.name1 = [{
+            'src': './img/gallery-4k.jpg',
+            'thumb': 'img/gallery-4k.jpg',
+            'subHtml': '<h4>Fading Light</h4><p>Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.</p>',
+        }, {
+            'src': './img/gallery2.jpg',
+            'thumb': 'img/gallery2.jpg',
+            'subHtml': "<h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>",
+        }, {
+            'src': './img/gallery3.jpg',
+            'thumb': 'img/gallery3.jpg',
+            'subHtml': "<h4>Coniston Calmness</h4><p>Beautiful morning</p>",
+        }];
+
+        array.name2 = [{
+            'src': './img/gallery2.jpg',
+            'thumb': 'img/gallery2.jpg',
+            'subHtml': "<h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>",
+        }, {
+            'src': './img/gallery4.jpg',
+            'thumb': 'img/gallery4.jpg',
+            'subHtml': "<h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>",
+        }, {
+            'src': './img/gallery5.jpg',
+            'thumb': 'img/gallery5.jpg',
+            'subHtml': "<h4>Coniston Calmness</h4><p>Beautiful morning</p>",
+        }];
+
+        array.name3 = [{
+            'src': './img/gallery1.jpg',
+            'thumb': 'img/gallery1.jpg',
+            'subHtml': "<h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>",
+        }];
+    </script>
+
+    <div class="loader"></div>
+    <header class="header">
+	<div class="header__menu">
+		<div class="header__menu-wrapper container">
+			<form class="header__menu-form header__menu-form--mobile">
+				<label><input placeholder="что ищем?" type="text"></label>
+				<button type="button">
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+						<path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="#F7F3F0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+						<path d="M21.0004 20.9999L16.6504 16.6499" stroke="#F7F3F0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+					</svg>
+				</button>
+			</form>
+			<ul class="header__menu-list">
+				<li class="header__menu-item">
+					<div class="header__menu-item-wrapper js-hover js-hover-menu" data-img-src="img/piltestnew.png" data-imgmasksrc="img/imgMask.png">
+						<a class="header__menu-link js-canvasLink" href="portfolio.html"><span>(01) </span>Портфолио</a>
+						<div class="header__menu-decor js-canvas-parent">
+							<canvas class="canvas canvas-menu js-canvas"></canvas>
+						</div>
+					</div>
+				</li>
+				<li class="header__menu-item">
+					<div class="header__menu-item-wrapper js-hover js-hover-menu" data-img-src="img/piltestnew.png" data-imgmasksrc="img/imgMask.png">
+						<a class="header__menu-link js-canvasLink" href="javascript:void(0)"><span>(02) </span>О студии</a>
+						<div class="header__menu-decor js-canvas-parent">
+							<canvas class="canvas canvas-menu js-canvas"></canvas>
+						</div>
+					</div>
+				</li>
+				<li class="header__menu-item">
+					<div class="header__menu-item-wrapper js-hover js-hover-menu" data-img-src="img/piltestnew.png" data-imgmasksrc="img/imgMask2.png">
+						<a class="header__menu-link js-canvasLink" href="javascript:void(0)"><span>(03) </span>Публикации</a>
+						<div class="header__menu-decor js-canvas-parent">
+							<canvas class="canvas canvas-menu js-canvas"></canvas>
+						</div>
+					</div>
+				</li>
+				<li class="header__menu-item">
+					<div class="header__menu-item-wrapper js-hover js-hover-menu" data-img-src="img/piltestnew.png" data-imgmasksrc="img/imgMask.png">
+						<a class="header__menu-link js-canvasLink" href="javascript:void(0)"><span>(04) </span>Контакты</a>
+						<div class="header__menu-decor js-canvas-parent">
+							<canvas class="canvas canvas-menu js-canvas"></canvas>
+						</div>
+					</div>
+				</li>
+				<li class="header__menu-item">
+					<div class="header__menu-item-wrapper js-hover js-hover-menu" data-img-src="img/piltestnew.png" data-imgmasksrc="img/imgMask.png">
+						<a class="header__menu-link js-canvasLink" href="javascript:void(0)"><span>(05) </span>Видео</a>
+						<div class="header__menu-decor js-canvas-parent">
+							<canvas class="canvas canvas-menu js-canvas"></canvas>
+						</div>
+					</div>
+				</li>
+				<li class="header__menu-item">
+					<div class="header__menu-item-wrapper js-hover js-hover-menu" data-img-src="img/piltestnew.png" data-imgmasksrc="img/imgMask2.png">
+						<a class="header__menu-link js-canvasLink" href="service.html"><span>(06) </span>Услуги</a>
+						<div class="header__menu-decor js-canvas-parent">
+							<canvas class="canvas canvas-menu js-canvas"></canvas>
+						</div>
+					</div>
+				</li>
+			</ul>
+			<ul class="header__social-list-mobile">
+				<li class="header__social-item">
+					<a href="javascript:void(0)">Vk</a>
+				</li>
+				<li class="header__social-item">
+					<a href="javascript:void(0)">Facebook</a>
+				</li>
+				<li class="header__social-item">
+					<a href="javascript:void(0)">Houzz</a>
+				</li>
+			</ul>
+			<div class="header__menu-contacts">
+				<a class="header__menu-contacts-link header__menu-contacts-link--mail" href="mailto:info@instilier.ru">info@instilier.ru</a>
+				<div>
+					<a class="header__menu-contacts-link header__menu-contacts-link--tel" href="tel:+74993468963">+7 - 499 - 346
+						- 8963</a>
+					<p class="header__menu-contacts-schedule">пн-пт: 8:00 - 19:00</p>
+				</div>
+				<p class="header__menu-contacts-adres"><span>Москва,</span> Литовский б-р 1-221</p>
+			</div>
+			<div class="header__menu-footer">
+				<p>ООО "Студия Инстильер" 2013-2021 (с)</p>
+				<a href="javascript:void(0)">Сделано в студии Магвай</a>
+			</div>
+		</div>
+	</div>
+	<div class="header__wrapper container">
+		<div class="header__content">
+			<a class="header__logo-link" href="javascript:void(0)">
+				<div class="header__logos">
+					<picture class="header__logo-default">
+						<source srcset="img/logo-mobile.png" media="(min-width: 0px) and (max-width: 767px)">
+						<source srcset="img/logo-tablet.png" media="(min-width: 767px) and (max-width: 1279px)">
+						<img src="img/logo-desktop.png" alt="logo">
+					</picture>
+					<div class="header__logo-fixed">
+						<img src="img/fixedLogo.svg" alt="img">
+					</div>
+				</div>
+			</a>
+			<p class="header__content-text">Мы являемся студией дизайна модных интерьеров</p>
+			<div class="header__menu-static">
+				<a class="is-text header__menu-btn js-headerMenu" data-click="0">
+					<div class="header__menu-inner-wrapper">
+						<span class="icon menu-icon"></span>
+					</div>
+					<p class="header__menu-btn-text header__menu-btn-text--menu">Меню</p>
+					<p class="header__menu-btn-text header__menu-btn-text--close">Закрыть</p>
+				</a>
+			</div>
+			<div class="header__bar">
+				<ul class="header__social-list">
+					<li class="header__social-item">
+						<a href="javascript:void(0)">Vk</a>
+					</li>
+					<li class="header__social-item">
+						<a href="javascript:void(0)">Facebook</a>
+					</li>
+					<li class="header__social-item">
+						<a href="javascript:void(0)">Houzz</a>
+					</li>
+				</ul>
+				<form>
+					<div>
+						<input type="text" placeholder="что ищем?">
+						<button class="header__bar-img-view" type="button">
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+								<path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="#B55A2B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+								<path d="M21.0004 20.9999L16.6504 16.6499" stroke="#B55A2B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+							</svg>
+						</button>
+						<a class="js-search-open" href="#">
+							<svg class="search-img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+								<path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="#B55A2B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+								<path d="M21.0004 20.9999L16.6504 16.6499" stroke="#B55A2B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+							</svg>
+							<svg class="close-img header__bar-img-view" xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 33 33" fill="none">
+								<line x1="7.77926" y1="24.042" x2="24.0427" y2="7.7785" stroke="#B55A2B"></line>
+								<line x1="24.041" y1="24.7491" x2="7.77752" y2="8.48561" stroke="#B55A2B"></line>
+							</svg>
+						</a>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</header>
+
+    <main>
+        <h1 class="visually-hidden">Разработка дизайн-проекта интерьера</h1>
+        <div class="font-init"></div>
+        <section class="main design">
+            <div class="main__wrapper container">
+                <p class="header__content-text header__content-text--mobile">Мы являемся студией дизайна модных интерьеров</p>
+                <ul class="main__list">
+                    <li class="main__item-main tile__item">
+                        <article class="tile">
+                            <figure class="tile__figure">
+                                <img src="img/gldown1.jpg" data-hover="img/glup1.jpg" class="tile__image" alt="My image" width="1080">
+                            </figure>
+                        </article>
+                    </li>
+                </ul>
+                <div class="main__title">
+                    <img data-aos="fade-up" data-aos-once="false" class="test1" src="img/design.svg" alt="img">
+                </div>
+            </div>
+            <div data-aos="fade-up" data-aos-once="false" class="design__preview container">
+                <span>Об услуге</span>
+                <p>Разработка дизайн-проекта интерьера всегда получает своё воплощение в подготовке планировочного и стилистического решений, а также комплекта рабочей документации для строителей — основы основ нашей работы и фундамента успеха будущего ремонта.
+                    В этом разделе сайта мы уделили особое внимание исчерпывающему описанию набора оказываемых услуг по каждому из тарифов, чтобы уже при беглом просмотре нашего прайс-листа было прозрачно ясно: какой объём работ будет выполнен и сколько
+                    это будет стоить на выходе. В конце страницы мы привели полезную для заказчиков дизайн проектов квартир информацию о возможностях согласования перепланировок в городских инспекциях.
+                </p>
+                <a href="javascript:void(0)">Читать больше</a>
+            </div>
+        </section>
+
+        <section class="price">
+            <div class="price__wrapper container">
+                <div class="main__item about__title-decor js-hover js-hover-main js-show-scroll" data-img-src="img/price.png" data-imgmasksrc="img/imgMask.png">
+                    <div class="about__canvas-wrapper js-show-scroll-canvas js-show-scroll-scale">
+                        <canvas class="canvas canvas-main js-canvas"></canvas>
+                    </div>
+                </div>
+                <span class="about__num">(1)</span>
+                <h2 data-aos="fade-up" data-aos-once="false" class="price__title">
+                    <span>СКОЛЬКО СТОИТ</span>
+                    <span>ДИЗАЙН-ПРОЕКТ
+					</span>
+                    <span>КВАРТИРЫ? </span>
+                </h2>
+                <h3>цены на разработку интерьеров одноэтажных жилых помещений и апартаментов</h3>
+                <div>
+                    <ul class="pricelist__listPrice">
+                        <li data-aos="fade-up" data-aos-once="false">
+                            <p class="pricelist__title-mobile">
+                                <span>ГНЕЗДЫШКО</span>
+                                <span>&lt; 55 м2</span>
+                            </p>
+                            <div class="pricelist-price__header">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th class="item-title">
+                                                <p>ГНЕЗДЫШКО</p>
+                                                <p>&lt; 55 м2</p>
+                                            </th>
+                                            <th>
+                                                <p>Планировка</p>
+                                                <p>2000 р.</p>
+                                            </th>
+                                            <th>
+                                                <p>Эконом</p>
+                                                <p>2000 р.</p>
+                                            </th>
+                                            <th>
+                                                <p>Оптимум</p>
+                                                <p>2300 р.</p>
+                                            </th>
+                                            <th>
+                                                <p>Беззаботный</p>
+                                                <p>По запросу</p>
+                                            </th>
+                                            <th>
+                                                <p class="pluse">Оптимум <br> плюс</p>
+                                                <p>По запросу</p>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                </table>
+                            </div>
+                            <div class="pricelist-price__content js-hide">
+                                <div class="pricelist-price__list dropdown dropdown--card dropdown--mobile">
+                                    <div data-aos="fade-right" data-aos-once="false" class="dropdown__item"> <button class="dropdown__btn js-dropdown">Оптимум <span class="dropdown__subtext">2200 р.</span><span class="dropdown__icon"></span></button>
+                                        <div class="dropdown__info">
+                                            <ol>
+                                                <li>Разработка планировочного решения (3 вариант + корректировка)
+                                                    <a class="prompt js-astr" data-promt="? — каждая визуализация выполняется с нескольких ракурсов, позволяющих раскрыть все детали интерьера (минимум по 2 изображения на каждое помещение1" href="javascript:void(0)"><span>?</span></a>
+                                                    <button class="js-openSecondModal" data-name="name1">смотреть прим.</button>
+                                                </li>
+                                                <li>Коллажки
+                                                    <a class="prompt js-astr" data-promt="? — каждая визуализация выполняется с нескольких ракурсов, позволяющих раскрыть все детали интерьера (минимум по 2 изображения на каждое помещение2" href="javascript:void(0)"><span>?</span></a>
+                                                </li>
+                                                <li>Подбор мебели и аксессуаров по проекту (см. детали)
+                                                    <a class="prompt js-astr" data-promt="? — каждая визуализация выполняется с нескольких ракурсов, позволяющих раскрыть все детали интерьера (минимум по 2 изображения на каждое помещение3" href="javascript:void(0)"><span>?</span></a>
+                                                </li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                    <div data-aos="fade-left" data-aos-once="false" class="dropdown__item"> <button class="dropdown__btn js-dropdown">Планировка <span class="dropdown__subtext">2200 р.</span><span class="dropdown__icon"></span></button>
+                                        <div class="dropdown__info">
+                                            <ol>
+                                                <li>Разработка планировочного решения (3 вариант + корректировка)</li>
+                                                <li>3D планировки</li>
+                                                <li>3D визуализации комнат*</li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                    <div data-aos="fade-right" data-aos-once="false" class="dropdown__item"> <button class="dropdown__btn js-dropdown">Эконом <span class="dropdown__subtext">2200 р.</span><span class="dropdown__icon"></span></button>
+                                        <div class="dropdown__info">
+                                            <ol>
+                                                <li>Разработка планировочного решения (3 вариант + корректировка)</li>
+                                                <li>3D планировки</li>
+                                                <li>3D визуализации комнат*</li>
+                                                <li>Подбор мебели и аксессуаров по проекту (см. детали)</li>
+                                                <li>3D визуализации комнат*</li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                </div>
+                                <table>
+                                    <tr>
+                                        <td data-aos="fade-right" data-aos-once="false">
+                                            <p>Разработка планировочного решения (3 вариант + корректировка)</p>
+                                            <a href="#" class="js-openSecondModal" data-name="name1">смотреть прим.</a>
+                                        </td>
+                                        <td data-aos="flip-up" data-aos-once="false" class="active"></td>
+                                        <td data-aos="flip-up" data-aos-once="false" class="active"></td>
+                                        <td data-aos="flip-up" data-aos-once="false" class="active"></td>
+                                        <td data-aos="flip-up" data-aos-once="false" class="active"></td>
+                                        <td data-aos="flip-up" data-aos-once="false" class="active"></td>
+                                    </tr>
+                                    <tr>
+                                        <td data-aos="fade-right" data-aos-once="false">Комплект рабочей документации (состав чертежей см. здесь)
+                                        </td>
+                                        <td data-aos="flip-up" data-aos-once="false" class="active"></td>
+                                        <td data-aos="flip-up" data-aos-once="false" class="active"></td>
+                                        <td data-aos="flip-up" data-aos-once="false" class="active"></td>
+                                        <td data-aos="flip-up" data-aos-once="false" class="active"></td>
+                                        <td data-aos="flip-up" data-aos-once="false" class="active"></td>
+                                    </tr>
+                                    <tr>
+                                        <td data-aos="fade-right" data-aos-once="false">Коллажи</td>
+                                        <td data-aos="flip-up" data-aos-once="false" class="unactive"></td>
+                                        <td data-aos="flip-up" data-aos-once="false" class="unactive"></td>
+                                        <td data-aos="flip-up" data-aos-once="false" class="unactive"></td>
+                                        <td data-aos="flip-up" data-aos-once="false" class="unactive"></td>
+                                        <td data-aos="flip-up" data-aos-once="false" class="active"></td>
+                                    </tr>
+                                    <tr>
+                                        <td data-aos="fade-right" data-aos-once="false">3D планировки</td>
+                                        <td data-aos="flip-up" data-aos-once="false" class="active"></td>
+                                        <td data-aos="flip-up" data-aos-once="false" class="unactive"></td>
+                                        <td data-aos="flip-up" data-aos-once="false" class="active"></td>
+                                        <td data-aos="flip-up" data-aos-once="false" class="unactive"></td>
+                                        <td data-aos="flip-up" data-aos-once="false" class="active"></td>
+                                    </tr>
+                                    <tr>
+                                        <td data-aos="fade-right" data-aos-once="false">3D визуализации <br> комнат <a class="prompt js-promt" data-promt="? — каждая визуализация выполняется с нескольких ракурсов, позволяющих раскрыть все детали интерьера (минимум по 2 изображения на каждое помещение" href="javascript:void(0)"><span>?</span></a></td>
+                                        <td data-aos="flip-up" data-aos-once="false" class="active"></td>
+                                        <td data-aos="flip-up" data-aos-once="false" class="active"></td>
+                                        <td data-aos="flip-up" data-aos-once="false" class="text">3 пом. <a class="prompt js-promt" data-promt="? — каждая визуализация выполняется с нескольких ракурсов, позволяющих раскрыть все детали интерьера (минимум по 2 изображения на каждое помещение" href="javascript:void(0)"><span>?</span></a></td>
+                                        <td data-aos="flip-up" data-aos-once="false" class="text">все. <a class="prompt js-promt" data-promt="? — каждая визуализация выполняется с нескольких ракурсов, позволяющих раскрыть все детали интерьера (минимум по 2 изображения на каждое помещение" href="javascript:void(0)"><span>?</span></a></td>
+                                        <td data-aos="flip-up" data-aos-once="false" class="active"></td>
+                                    </tr>
+                                    <tr>
+                                        <td data-aos="fade-right" data-aos-once="false">Подбор мебели и аксессуаров по проекту (см. детали)
+                                            <a class="prompt js-promt" data-promt="? — каждая визуализация выполняется с нескольких ракурсов, позволяющих раскрыть все детали интерьера (минимум по 2 изображения на каждое помещение" href="javascript:void(0)"><span>?</span></a></td>
+                                        <td data-aos="flip-up" data-aos-once="false" class="active"></td>
+                                        <td data-aos="flip-up" data-aos-once="false" class="unactive"></td>
+                                        <td data-aos="flip-up" data-aos-once="false" class="active"></td>
+                                        <td data-aos="flip-up" data-aos-once="false" class="unactive"></td>
+                                        <td data-aos="flip-up" data-aos-once="false" class="active"></td>
+                                    </tr>
+                                </table>
+                                <div data-aos="fade-up" data-aos-once="false" class="note">
+                                    <p>По какому бы тарифу ни заказывалась разработка дизайна интерьера, вы можете дополнительно заказать комплектацию (подбор в квартиру мебели и оборудования) или авторское сопровождение проекта. Подбор строительных подрядчиков
+                                        осуществляется нами бесплатно в любом случае.</p>
+                                </div>
+                            </div>
+                            <div class="pricelist-price__btn-wrap">
+                                <a class="pricelist-price__btn" href="javascript:void(0)" data-active="0">Подробнее <span>
+										<svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
+											<path d="M14 0.484375L14 13.4844M14 13.4844L1 13.4844M14 13.4844L1 0.484374" stroke="#B55A2B"></path>
+										</svg>
+									</span></a>
+                            </div>
+                        </li>
+                        <li data-aos="fade-up" data-aos-once="false">
+                            <p class="pricelist__title-mobile">
+                                <span>ГНЕЗДЫШКО</span>
+                                <span>&lt; 55 м2</span>
+                            </p>
+                            <div class="pricelist-price__header">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th class="item-title">
+                                                <p>ГНЕЗДЫШКО</p>
+                                                <p>&lt; 55 м2</p>
+                                            </th>
+                                            <th>
+                                                <p>Планировка</p>
+                                                <p>2000 р.</p>
+                                            </th>
+                                            <th>
+                                                <p>Эконом</p>
+                                                <p>2000 р.</p>
+                                            </th>
+                                            <th>
+                                                <p>Оптимум</p>
+                                                <p>2300 р.</p>
+                                            </th>
+                                            <th>
+                                                <p>Беззаботный</p>
+                                                <p>По запросу</p>
+                                            </th>
+                                            <th>
+                                                <p class="pluse">Оптимум <br> плюс</p>
+                                                <p>По запросу</p>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                </table>
+                            </div>
+                            <div class="pricelist-price__content js-hide">
+                                <div class="pricelist-price__list dropdown dropdown--card dropdown--mobile">
+                                    <div data-aos="fade-right" data-aos-once="false" class="dropdown__item"> <button class="dropdown__btn js-dropdown">Оптимум <span class="dropdown__subtext">2200 р.</span><span class="dropdown__icon"></span></button>
+                                        <div class="dropdown__info">
+                                            <ol>
+                                                <li>Разработка планировочного решения (3 вариант + корректировка)</li>
+                                                <li>Коллажки</li>
+                                                <li>Подбор мебели и аксессуаров по проекту (см. детали) </li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                    <div data-aos="fade-left" data-aos-once="false" class="dropdown__item"> <button class="dropdown__btn js-dropdown">Планировка <span class="dropdown__subtext">2200 р.</span><span class="dropdown__icon"></span></button>
+                                        <div class="dropdown__info">
+                                            <ol>
+                                                <li>Разработка планировочного решения (3 вариант + корректировка)</li>
+                                                <li>3D планировки</li>
+                                                <li>3D визуализации комнат*</li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                    <div data-aos="fade-right" data-aos-once="false" class="dropdown__item"> <button class="dropdown__btn js-dropdown">Эконом <span class="dropdown__subtext">2200 р.</span><span class="dropdown__icon"></span></button>
+                                        <div class="dropdown__info">
+                                            <ol>
+                                                <li>Разработка планировочного решения (3 вариант + корректировка)</li>
+                                                <li>3D планировки</li>
+                                                <li>3D визуализации комнат*</li>
+                                                <li>Подбор мебели и аксессуаров по проекту (см. детали)</li>
+                                                <li>3D визуализации комнат*</li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                </div>
+                                <table>
+                                    <tr>
+                                        <td data-aos="fade-right" data-aos-once="false">Разработка планировочного решения (3 вариант + корректировка)
+                                        </td>
+                                        <td data-aos="flip-up" data-aos-once="false" class="active"></td>
+                                        <td data-aos="flip-up" data-aos-once="false" class="active"></td>
+                                        <td data-aos="flip-up" data-aos-once="false" class="active"></td>
+                                        <td data-aos="flip-up" data-aos-once="false" class="active"></td>
+                                        <td data-aos="flip-up" data-aos-once="false" class="active"></td>
+                                    </tr>
+                                    <tr>
+                                        <td data-aos="fade-right" data-aos-once="false">Комплект рабочей документации (состав чертежей см. здесь)
+                                        </td>
+                                        <td data-aos="flip-up" data-aos-once="false" class="active"></td>
+                                        <td data-aos="flip-up" data-aos-once="false" class="active"></td>
+                                        <td data-aos="flip-up" data-aos-once="false" class="active"></td>
+                                        <td data-aos="flip-up" data-aos-once="false" class="active"></td>
+                                        <td data-aos="flip-up" data-aos-once="false" class="active"></td>
+                                    </tr>
+                                    <tr>
+                                        <td data-aos="fade-right" data-aos-once="false">Коллажи</td>
+                                        <td data-aos="flip-up" data-aos-once="false" class="unactive"></td>
+                                        <td data-aos="flip-up" data-aos-once="false" class="unactive"></td>
+                                        <td data-aos="flip-up" data-aos-once="false" class="unactive"></td>
+                                        <td data-aos="flip-up" data-aos-once="false" class="unactive"></td>
+                                        <td data-aos="flip-up" data-aos-once="false" class="active"></td>
+                                    </tr>
+                                    <tr>
+                                        <td data-aos="fade-right" data-aos-once="false">3D планировки</td>
+                                        <td data-aos="flip-up" data-aos-once="false" class="active"></td>
+                                        <td data-aos="flip-up" data-aos-once="false" class="unactive"></td>
+                                        <td data-aos="flip-up" data-aos-once="false" class="active"></td>
+                                        <td data-aos="flip-up" data-aos-once="false" class="unactive"></td>
+                                        <td data-aos="flip-up" data-aos-once="false" class="active"></td>
+                                    </tr>
+                                    <tr>
+                                        <td data-aos="fade-right" data-aos-once="false">3D визуализации <br> комнат* <a class="prompt js-promt" data-promt="? — каждая визуализация выполняется с нескольких ракурсов, позволяющих раскрыть все детали интерьера (минимум по 2 изображения на каждое помещение" href="javascript:void(0)"><span>?</span></a></td>
+                                        <td data-aos="flip-up" data-aos-once="false" class="active"></td>
+                                        <td data-aos="flip-up" data-aos-once="false" class="active"></td>
+                                        <td data-aos="flip-up" data-aos-once="false" class="text">3 пом. <a class="prompt js-promt" data-promt="? — каждая визуализация выполняется с нескольких ракурсов, позволяющих раскрыть все детали интерьера (минимум по 2 изображения на каждое помещение" href="javascript:void(0)"><span>?</span></a></td>
+                                        <td data-aos="flip-up" data-aos-once="false" class="text">все. <a class="prompt js-promt" data-promt="? — каждая визуализация выполняется с нескольких ракурсов, позволяющих раскрыть все детали интерьера (минимум по 2 изображения на каждое помещение" href="javascript:void(0)"><span>?</span></a></td>
+                                        <td data-aos="flip-up" data-aos-once="false" class="active"></td>
+                                    </tr>
+                                    <tr>
+                                        <td data-aos="fade-right" data-aos-once="false">Подбор мебели и аксессуаров по проекту (см. детали)
+                                        </td>
+                                        <td data-aos="flip-up" data-aos-once="false" class="active"></td>
+                                        <td data-aos="flip-up" data-aos-once="false" class="unactive"></td>
+                                        <td data-aos="flip-up" data-aos-once="false" class="active"></td>
+                                        <td data-aos="flip-up" data-aos-once="false" class="unactive"></td>
+                                        <td data-aos="flip-up" data-aos-once="false" class="active"></td>
+                                    </tr>
+                                </table>
+                                <div data-aos="fade-up" data-aos-once="false" class="note">
+                                    <p>По какому бы тарифу ни заказывалась разработка дизайна интерьера, вы можете дополнительно заказать комплектацию (подбор в квартиру мебели и оборудования) или авторское сопровождение проекта. Подбор строительных подрядчиков
+                                        осуществляется нами бесплатно в любом случае.</p>
+                                </div>
+                            </div>
+                            <div class="pricelist-price__btn-wrap">
+                                <a class="pricelist-price__btn" href="javascript:void(0)" data-active="0">Подробнее <span>
+										<svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
+											<path d="M14 0.484375L14 13.4844M14 13.4844L1 13.4844M14 13.4844L1 0.484374" stroke="#B55A2B"></path>
+										</svg>
+									</span></a>
+                            </div>
+                        </li>
+                        <li data-aos="fade-up" data-aos-once="false">
+                            <p class="pricelist__title-mobile">
+                                <span>ГНЕЗДЫШКО</span>
+                                <span>&lt; 55 м2</span>
+                            </p>
+                            <div class="pricelist-price__header">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th class="item-title">
+                                                <p>ГНЕЗДЫШКО</p>
+                                                <p>&lt; 55 м2</p>
+                                            </th>
+                                            <th>
+                                                <p>Планировка</p>
+                                                <p>2000 р.</p>
+                                            </th>
+                                            <th>
+                                                <p>Эконом</p>
+                                                <p>2000 р.</p>
+                                            </th>
+                                            <th>
+                                                <p>Оптимум</p>
+                                                <p>2300 р.</p>
+                                            </th>
+                                            <th>
+                                                <p>Беззаботный</p>
+                                                <p>По запросу</p>
+                                            </th>
+                                            <th>
+                                                <p class="pluse">Оптимум <br> плюс</p>
+                                                <p>По запросу</p>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                </table>
+                            </div>
+                            <div class="pricelist-price__content js-hide">
+                                <div class="pricelist-price__list dropdown dropdown--card dropdown--mobile">
+                                    <div data-aos="fade-right" data-aos-once="false" class="dropdown__item"> <button class="dropdown__btn js-dropdown">Оптимум <span class="dropdown__subtext">2200 р.</span><span class="dropdown__icon"></span></button>
+                                        <div class="dropdown__info">
+                                            <ol>
+                                                <li>Разработка планировочного решения (3 вариант + корректировка)</li>
+                                                <li>Коллажки</li>
+                                                <li>Подбор мебели и аксессуаров по проекту (см. детали) </li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                    <div data-aos="fade-left" data-aos-once="false" class="dropdown__item"> <button class="dropdown__btn js-dropdown">Планировка <span class="dropdown__subtext">2200 р.</span><span class="dropdown__icon"></span></button>
+                                        <div class="dropdown__info">
+                                            <ol>
+                                                <li>Разработка планировочного решения (3 вариант + корректировка)</li>
+                                                <li>3D планировки</li>
+                                                <li>3D визуализации комнат*</li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                    <div data-aos="fade-right" data-aos-once="false" class="dropdown__item"> <button class="dropdown__btn js-dropdown">Эконом <span class="dropdown__subtext">2200 р.</span><span class="dropdown__icon"></span></button>
+                                        <div class="dropdown__info">
+                                            <ol>
+                                                <li>Разработка планировочного решения (3 вариант + корректировка)</li>
+                                                <li>3D планировки</li>
+                                                <li>3D визуализации комнат*</li>
+                                                <li>Подбор мебели и аксессуаров по проекту (см. детали)</li>
+                                                <li>3D визуализации комнат*</li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                </div>
+                                <table>
+                                    <tr>
+                                        <td data-aos="fade-right" data-aos-once="false">Разработка планировочного решения (3 вариант + корректировка)
+                                        </td>
+                                        <td data-aos="flip-up" data-aos-once="false" class="active"></td>
+                                        <td data-aos="flip-up" data-aos-once="false" class="active"></td>
+                                        <td data-aos="flip-up" data-aos-once="false" class="active"></td>
+                                        <td data-aos="flip-up" data-aos-once="false" class="active"></td>
+                                        <td data-aos="flip-up" data-aos-once="false" class="active"></td>
+                                    </tr>
+                                    <tr>
+                                        <td data-aos="fade-right" data-aos-once="false">Комплект рабочей документации (состав чертежей см. здесь)
+                                        </td>
+                                        <td data-aos="flip-up" data-aos-once="false" class="active"></td>
+                                        <td data-aos="flip-up" data-aos-once="false" class="active"></td>
+                                        <td data-aos="flip-up" data-aos-once="false" class="active"></td>
+                                        <td data-aos="flip-up" data-aos-once="false" class="active"></td>
+                                        <td data-aos="flip-up" data-aos-once="false" class="active"></td>
+                                    </tr>
+                                    <tr>
+                                        <td data-aos="fade-right" data-aos-once="false">Коллажи</td>
+                                        <td data-aos="flip-up" data-aos-once="false" class="unactive"></td>
+                                        <td data-aos="flip-up" data-aos-once="false" class="unactive"></td>
+                                        <td data-aos="flip-up" data-aos-once="false" class="unactive"></td>
+                                        <td data-aos="flip-up" data-aos-once="false" class="unactive"></td>
+                                        <td data-aos="flip-up" data-aos-once="false" class="active"></td>
+                                    </tr>
+                                    <tr>
+                                        <td data-aos="fade-right" data-aos-once="false">3D планировки</td>
+                                        <td data-aos="flip-up" data-aos-once="false" class="active"></td>
+                                        <td data-aos="flip-up" data-aos-once="false" class="unactive"></td>
+                                        <td data-aos="flip-up" data-aos-once="false" class="active"></td>
+                                        <td data-aos="flip-up" data-aos-once="false" class="unactive"></td>
+                                        <td data-aos="flip-up" data-aos-once="false" class="active"></td>
+                                    </tr>
+                                    <tr>
+                                        <td data-aos="fade-right" data-aos-once="false">3D визуализации <br> комнат* <a class="prompt js-promt" data-promt="? — каждая визуализация выполняется с нескольких ракурсов, позволяющих раскрыть все детали интерьера (минимум по 2 изображения на каждое помещение" href="javascript:void(0)"><span>?</span></a></td>
+                                        <td data-aos="flip-up" data-aos-once="false" class="active"></td>
+                                        <td data-aos="flip-up" data-aos-once="false" class="active"></td>
+                                        <td data-aos="flip-up" data-aos-once="false" class="text">3 пом. <a class="prompt js-promt" data-promt="? — каждая визуализация выполняется с нескольких ракурсов, позволяющих раскрыть все детали интерьера (минимум по 2 изображения на каждое помещение" href="javascript:void(0)"><span>?</span></a></td>
+                                        <td data-aos="flip-up" data-aos-once="false" class="text">все. <a class="prompt js-promt" data-promt="? — каждая визуализация выполняется с нескольких ракурсов, позволяющих раскрыть все детали интерьера (минимум по 2 изображения на каждое помещение" href="javascript:void(0)"><span>?</span></a></td>
+                                        <td data-aos="flip-up" data-aos-once="false" class="active"></td>
+                                    </tr>
+                                    <tr>
+                                        <td data-aos="fade-right" data-aos-once="false">Подбор мебели и аксессуаров по проекту (см. детали)
+                                        </td>
+                                        <td data-aos="flip-up" data-aos-once="false" class="active"></td>
+                                        <td data-aos="flip-up" data-aos-once="false" class="unactive"></td>
+                                        <td data-aos="flip-up" data-aos-once="false" class="active"></td>
+                                        <td data-aos="flip-up" data-aos-once="false" class="unactive"></td>
+                                        <td data-aos="flip-up" data-aos-once="false" class="active"></td>
+                                    </tr>
+                                </table>
+                                <div data-aos="fade-up" data-aos-once="false" class="note">
+                                    <p>По какому бы тарифу ни заказывалась разработка дизайна интерьера, вы можете дополнительно заказать комплектацию (подбор в квартиру мебели и оборудования) или авторское сопровождение проекта. Подбор строительных подрядчиков
+                                        осуществляется нами бесплатно в любом случае.</p>
+                                </div>
+                            </div>
+                            <div class="pricelist-price__btn-wrap">
+                                <a class="pricelist-price__btn" href="javascript:void(0)" data-active="0">Подробнее <span>
+										<svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
+											<path d="M14 0.484375L14 13.4844M14 13.4844L1 13.4844M14 13.4844L1 0.484374" stroke="#B55A2B"></path>
+										</svg>
+									</span></a>
+                            </div>
+                        </li>
+                        <li data-aos="fade-up" data-aos-once="false">
+                            <p class="pricelist__title-mobile">
+                                <span>ГНЕЗДЫШКО</span>
+                                <span>&lt; 55 м2</span>
+                            </p>
+                            <div class="pricelist-price__header">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th class="item-title">
+                                                <p>ГНЕЗДЫШКО</p>
+                                                <p>&lt; 55 м2</p>
+                                            </th>
+                                            <th>
+                                                <p>Планировка</p>
+                                                <p>2000 р.</p>
+                                            </th>
+                                            <th>
+                                                <p>Эконом</p>
+                                                <p>2000 р.</p>
+                                            </th>
+                                            <th>
+                                                <p>Оптимум</p>
+                                                <p>2300 р.</p>
+                                            </th>
+                                            <th>
+                                                <p>Беззаботный</p>
+                                                <p>По запросу</p>
+                                            </th>
+                                            <th>
+                                                <p class="pluse">Оптимум <br> плюс</p>
+                                                <p>По запросу</p>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                </table>
+                            </div>
+                            <div class="pricelist-price__content js-hide">
+                                <div class="pricelist-price__list dropdown dropdown--card dropdown--mobile">
+                                    <div data-aos="fade-right" data-aos-once="false" class="dropdown__item"> <button class="dropdown__btn js-dropdown">Оптимум <span class="dropdown__subtext">2200 р.</span><span class="dropdown__icon"></span></button>
+                                        <div class="dropdown__info">
+                                            <ol>
+                                                <li>Разработка планировочного решения (3 вариант + корректировка)</li>
+                                                <li>Коллажки</li>
+                                                <li>Подбор мебели и аксессуаров по проекту (см. детали) </li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                    <div data-aos="fade-left" data-aos-once="false" class="dropdown__item"> <button class="dropdown__btn js-dropdown">Планировка <span class="dropdown__subtext">2200 р.</span><span class="dropdown__icon"></span></button>
+                                        <div class="dropdown__info">
+                                            <ol>
+                                                <li>Разработка планировочного решения (3 вариант + корректировка)</li>
+                                                <li>3D планировки</li>
+                                                <li>3D визуализации комнат*</li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                    <div data-aos="fade-right" data-aos-once="false" class="dropdown__item"> <button class="dropdown__btn js-dropdown">Эконом <span class="dropdown__subtext">2200 р.</span><span class="dropdown__icon"></span></button>
+                                        <div class="dropdown__info">
+                                            <ol>
+                                                <li>Разработка планировочного решения (3 вариант + корректировка)</li>
+                                                <li>3D планировки</li>
+                                                <li>3D визуализации комнат*</li>
+                                                <li>Подбор мебели и аксессуаров по проекту (см. детали)</li>
+                                                <li>3D визуализации комнат*</li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                </div>
+                                <table>
+                                    <tr>
+                                        <td data-aos="fade-right" data-aos-once="false">Разработка планировочного решения (3 вариант + корректировка)
+                                        </td>
+                                        <td data-aos="flip-up" data-aos-once="false" class="active"></td>
+                                        <td data-aos="flip-up" data-aos-once="false" class="active"></td>
+                                        <td data-aos="flip-up" data-aos-once="false" class="active"></td>
+                                        <td data-aos="flip-up" data-aos-once="false" class="active"></td>
+                                        <td data-aos="flip-up" data-aos-once="false" class="active"></td>
+                                    </tr>
+                                    <tr>
+                                        <td data-aos="fade-right" data-aos-once="false">Комплект рабочей документации (состав чертежей см. здесь)
+                                        </td>
+                                        <td data-aos="flip-up" data-aos-once="false" class="active"></td>
+                                        <td data-aos="flip-up" data-aos-once="false" class="active"></td>
+                                        <td data-aos="flip-up" data-aos-once="false" class="active"></td>
+                                        <td data-aos="flip-up" data-aos-once="false" class="active"></td>
+                                        <td data-aos="flip-up" data-aos-once="false" class="active"></td>
+                                    </tr>
+                                    <tr>
+                                        <td data-aos="fade-right" data-aos-once="false">Коллажи</td>
+                                        <td data-aos="flip-up" data-aos-once="false" class="unactive"></td>
+                                        <td data-aos="flip-up" data-aos-once="false" class="unactive"></td>
+                                        <td data-aos="flip-up" data-aos-once="false" class="unactive"></td>
+                                        <td data-aos="flip-up" data-aos-once="false" class="unactive"></td>
+                                        <td data-aos="flip-up" data-aos-once="false" class="active"></td>
+                                    </tr>
+                                    <tr>
+                                        <td data-aos="fade-right" data-aos-once="false">3D планировки</td>
+                                        <td data-aos="flip-up" data-aos-once="false" class="active"></td>
+                                        <td data-aos="flip-up" data-aos-once="false" class="unactive"></td>
+                                        <td data-aos="flip-up" data-aos-once="false" class="active"></td>
+                                        <td data-aos="flip-up" data-aos-once="false" class="unactive"></td>
+                                        <td data-aos="flip-up" data-aos-once="false" class="active"></td>
+                                    </tr>
+                                    <tr>
+                                        <td data-aos="fade-right" data-aos-once="false">3D визуализации <br> комнат* <a class="prompt js-promt" data-promt="? — каждая визуализация выполняется с нескольких ракурсов, позволяющих раскрыть все детали интерьера (минимум по 2 изображения на каждое помещение" href="javascript:void(0)"><span>?</span></a></td>
+                                        <td data-aos="flip-up" data-aos-once="false" class="active"></td>
+                                        <td data-aos="flip-up" data-aos-once="false" class="active"></td>
+                                        <td data-aos="flip-up" data-aos-once="false" class="text">3 пом. <a class="prompt js-promt" data-promt="? — каждая визуализация выполняется с нескольких ракурсов, позволяющих раскрыть все детали интерьера (минимум по 2 изображения на каждое помещение" href="javascript:void(0)"><span>?</span></a></td>
+                                        <td data-aos="flip-up" data-aos-once="false" class="text">все. <a class="prompt js-promt" data-promt="? — каждая визуализация выполняется с нескольких ракурсов, позволяющих раскрыть все детали интерьера (минимум по 2 изображения на каждое помещение" href="javascript:void(0)"><span>?</span></a></td>
+                                        <td data-aos="flip-up" data-aos-once="false" class="active"></td>
+                                    </tr>
+                                    <tr>
+                                        <td data-aos="fade-right" data-aos-once="false">Подбор мебели и аксессуаров по проекту (см. детали)
+                                        </td>
+                                        <td data-aos="flip-up" data-aos-once="false" class="active"></td>
+                                        <td data-aos="flip-up" data-aos-once="false" class="unactive"></td>
+                                        <td data-aos="flip-up" data-aos-once="false" class="active"></td>
+                                        <td data-aos="flip-up" data-aos-once="false" class="unactive"></td>
+                                        <td data-aos="flip-up" data-aos-once="false" class="active"></td>
+                                    </tr>
+                                </table>
+                                <div data-aos="fade-up" data-aos-once="false" class="note">
+                                    <p>По какому бы тарифу ни заказывалась разработка дизайна интерьера, вы можете дополнительно заказать комплектацию (подбор в квартиру мебели и оборудования) или авторское сопровождение проекта. Подбор строительных подрядчиков
+                                        осуществляется нами бесплатно в любом случае.</p>
+                                </div>
+                            </div>
+                            <div class="pricelist-price__btn-wrap">
+                                <a class="pricelist-price__btn" href="javascript:void(0)" data-active="0">Подробнее <span>
+										<svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
+											<path d="M14 0.484375L14 13.4844M14 13.4844L1 13.4844M14 13.4844L1 0.484374" stroke="#B55A2B"></path>
+										</svg>
+									</span></a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="isBtnDye">
+                <div class="isBtnDye__link">
+                    <a class="js-hover-anim js-show-scroll" href="javascript:void(5)">
+                        <div style="background: url('img/feedback-active.svg'), #b55a2b;">
+                            <canvas data-src="img/feedback-static.svg" style="background: url('img/feedback-static.svg'), #FAF9F7;" class="milkload" width="300" height="300"></canvas>
+                        </div>
+                    </a>
+                </div>
+                <a class="isBtnDye__link-mobile" style="background-image: url('img/feedback-active.svg');" href="javascript:void(0)"></a>
+            </div>
+        </section>
+        <section class="composition">
+            <div class="composition__wrapper container">
+                <div class="main__item about__title-decor js-hover js-hover-main js-show-scroll" data-img-src="img/composition.png" data-imgmasksrc="img/imgMask.png">
+                    <div class="about__canvas-wrapper js-show-scroll-canvas js-show-scroll-scale">
+                        <canvas class="canvas canvas-main js-canvas"></canvas>
+                    </div>
+                </div>
+                <span class="about__num">(1)</span>
+                <h2 data-aos="fade-up" data-aos-once="false" class="price__title">
+                    <span>СОСТАВ</span>
+                    <span>ДИЗАЙН-ПРОЕКТА</span>
+                    <span>ИНТЕРЬЕРА</span>
+                </h2>
+                <h3>Слаженная работа дизайнера и бригады строителей является залогом наилучшего результата</h3>
+                <div class="composition__content">
+                    <ul class="composition__list-choice">
+                        <li data-aos="fade-right" data-aos-once="false">
+                            <span class="active">01</span>
+                            <a class="js-composition-link" href="javascript:void(0)">Планы перепланировки</a>
+                        </li>
+                        <li data-aos="fade-right" data-aos-once="false">
+                            <span>02</span>
+                            <a class="js-composition-link" href="javascript:void(0)">Планы освещения, инженерного и
+								электротехнического
+								оборудования</a>
+                        </li>
+                        <li data-aos="fade-right" data-aos-once="false">
+                            <span>03</span>
+                            <a class="js-composition-link" href="javascript:void(0)">Развёртки стен помещений</a>
+                        </li>
+                        <li data-aos="fade-right" data-aos-once="false">
+                            <span>04</span>
+                            <a class="js-composition-link" href="javascript:void(0)">Ведомости материалов и устройств</a>
+                        </li>
+                        <li data-aos="fade-right" data-aos-once="false">
+                            <span>05</span>
+                            <a class="js-composition-link" href="javascript:void(0)">Материалы стилистического решения</a>
+                        </li>
+                    </ul>
+                    <div class="composition__block">
+                        <ul class="composition__list-result js-composition-item">
+                            <li data-aos="fade-up" data-aos-once="false">
+                                <p>Обмерные чертежи квартиры, дома и т.д11111.</p>
+                                <a class="js-openSecondModal" href="#" data-name="name2">см.пример</a>
+                            </li>
+                            <li data-aos="fade-up" data-aos-once="false">
+                                <p>План перепланировки с экспликацией помещений и расстановкой мебели (cм. пример). По тарифам «Оптимум» и «Беззаботный» по желанию Заказчика на дизайн квартиры проект может быть расширен бесплатными 3D планировками, которые
+                                    значительно более удобны для восприятия, чем, как правило, непривычные глазу чертежи.
+                                </p>
+                                <a class="js-openSecondModal" href="#" data-name="name2">см.пример</a>
+                            </li>
+                            <li data-aos="fade-up" data-aos-once="false">
+                                <p>ППлан расстановки мебели и оборудования с габаритными размерами</p>
+                                <a class="js-openSecondModal" href="#" data-name="name2">см.пример</a>
+                            </li>
+                            <li data-aos="fade-up" data-aos-once="false">
+                                <p>Схема демонтажа перегородок и пр. элементов</p>
+                                <a class="js-openSecondModal" href="#" data-name="name2">см.пример</a>
+                            </li>
+                            <li data-aos="fade-up" data-aos-once="false">
+                                <p>План монтажа возводимых перегородок</p>
+                                <a class="js-openSecondModal" href="#" data-name="name2">см.пример</a>
+                            </li>
+                        </ul>
+                        <ul class="composition__list-result-hide js-composition-item">
+                            <li data-aos="fade-up" data-aos-once="false">
+                                <p>Обмерные чертежи квартиры, дома и т.д22222.</p>
+                                <a class="js-openSecondModal" href="#" data-name="name1">см.пример</a>
+                            </li>
+                            <li data-aos="fade-up" data-aos-once="false">
+                                <p>План перепланировки с экспликацией помещений и расстановкой мебели (cм. пример). По тарифам «Оптимум» и «Беззаботный» по желанию Заказчика на дизайн квартиры проект может быть расширен бесплатными 3D планировками, которые
+                                    значительно более удобны для восприятия, чем, как правило, непривычные глазу чертежи.
+                                </p>
+                                <a class="js-openSecondModal" href="#" data-name="name1">см.пример</a>
+                            </li>
+                            <li data-aos="fade-up" data-aos-once="false">
+                                <p>ППлан расстановки мебели и оборудования с габаритными размерами</p>
+                                <a class="js-openSecondModal" href="#" data-name="name1">см.пример</a>
+                            </li>
+                            <li data-aos="fade-up" data-aos-once="false">
+                                <p>Схема демонтажа перегородок и пр. элементов</p>
+                                <a class="js-openSecondModal" href="#" data-name="name1">см.пример</a>
+                            </li>
+                            <li data-aos="fade-up" data-aos-once="false">
+                                <p>План монтажа возводимых перегородок</p>
+                                <a class="js-openSecondModal" href="#" data-name="name1">см.пример</a>
+                            </li>
+                        </ul>
+                        <ul class="composition__list-result-hide js-composition-item">
+                            <li data-aos="fade-up" data-aos-once="false">
+                                <p>Обмерные чертежи квартиры, дома и т.д33333.</p>
+                                <a class="js-openSecondModal" href="#" data-name="name3">см.пример</a>
+                            </li>
+                            <li data-aos="fade-up" data-aos-once="false">
+                                <p>План перепланировки с экспликацией помещений и расстановкой мебели (cм. пример). По тарифам «Оптимум» и «Беззаботный» по желанию Заказчика на дизайн квартиры проект может быть расширен бесплатными 3D планировками, которые
+                                    значительно более удобны для восприятия, чем, как правило, непривычные глазу чертежи.
+                                </p>
+                                <a class="js-openSecondModal" href="#" data-name="name3">см.пример</a>
+                            </li>
+                            <li data-aos="fade-up" data-aos-once="false">
+                                <p>ППлан расстановки мебели и оборудования с габаритными размерами</p>
+                                <a class="js-openSecondModal" href="#" data-name="name3">см.пример</a>
+                            </li>
+                            <li data-aos="fade-up" data-aos-once="false">
+                                <p>Схема демонтажа перегородок и пр. элементов</p>
+                                <a class="js-openSecondModal" href="#" data-name="name3">см.пример</a>
+                            </li>
+                            <li data-aos="fade-up" data-aos-once="false">
+                                <p>План монтажа возводимых перегородок</p>
+                                <a class="js-openSecondModal" href="#" data-name="name3">см.пример</a>
+                            </li>
+                        </ul>
+                        <ul class="composition__list-result-hide js-composition-item">
+                            <li data-aos="fade-up" data-aos-once="false">
+                                <p>Обмерные чертежи квартиры, дома и т.д44444.</p>
+                                <a class="js-openSecondModal" href="#" data-name="name2">см.пример</a>
+                            </li>
+                            <li data-aos="fade-up" data-aos-once="false">
+                                <p>План перепланировки с экспликацией помещений и расстановкой мебели (cм. пример). По тарифам «Оптимум» и «Беззаботный» по желанию Заказчика на дизайн квартиры проект может быть расширен бесплатными 3D планировками, которые
+                                    значительно более удобны для восприятия, чем, как правило, непривычные глазу чертежи.
+                                </p>
+                                <a class="js-openSecondModal" href="#" data-name="name2">см.пример</a>
+                            </li>
+                            <li data-aos="fade-up" data-aos-once="false">
+                                <p>ППлан расстановки мебели и оборудования с габаритными размерами</p>
+                                <a class="js-openSecondModal" href="#" data-name="name2">см.пример</a>
+                            </li>
+                            <li data-aos="fade-up" data-aos-once="false">
+                                <p>Схема демонтажа перегородок и пр. элементов</p>
+                                <a class="js-openSecondModal" href="#" data-name="name2">см.пример</a>
+                            </li>
+                            <li data-aos="fade-up" data-aos-once="false">
+                                <p>План монтажа возводимых перегородок</p>
+                                <a class="js-openSecondModal" href="#" data-name="name2">см.пример</a>
+                            </li>
+                        </ul>
+                        <ul class="composition__list-result-hide js-composition-item">
+                            <li data-aos="fade-up" data-aos-once="false">
+                                <p>Обмерные чертежи квартиры, дома и т.д55555.</p>
+                                <a class="js-openSecondModal" href="#" data-name="name2">см.пример</a>
+                            </li>
+                            <li data-aos="fade-up" data-aos-once="false">
+                                <p>План перепланировки с экспликацией помещений и расстановкой мебели (cм. пример). По тарифам «Оптимум» и «Беззаботный» по желанию Заказчика на дизайн квартиры проект может быть расширен бесплатными 3D планировками, которые
+                                    значительно более удобны для восприятия, чем, как правило, непривычные глазу чертежи.
+                                </p>
+                                <a class="js-openSecondModal" href="#" data-name="name2">см.пример</a>
+                            </li>
+                            <li data-aos="fade-up" data-aos-once="false">
+                                <p>ППлан расстановки мебели и оборудования с габаритными размерами</p>
+                                <a class="js-openSecondModal" href="#" data-name="name2">см.пример</a>
+                            </li>
+                            <li data-aos="fade-up" data-aos-once="false">
+                                <p>Схема демонтажа перегородок и пр. элементов</p>
+                                <a class="js-openSecondModal" href="#" data-name="name2">см.пример</a>
+                            </li>
+                            <li data-aos="fade-up" data-aos-once="false">
+                                <p>План монтажа возводимых перегородок</p>
+                                <a class="js-openSecondModal" href="#" data-name="name2">см.пример</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="composition__content__mobile">
+                    <ul class="composition__list-choice">
+                        <li data-aos="fade-up" data-aos-once="false" class="composition__item-choice">
+                            <div>
+                                <span>01</span>
+                                <a href="javascript:void(0)">Планы перепланировки</a>
+                            </div>
+                            <ul class="composition__list-result">
+                                <li>
+                                    <p>Обмерные чертежи квартиры, дома и т.д.</p>
+                                    <a class="js-openSecondModal" href="#" data-name="name2">см.пример</a>
+                                </li>
+                                <li>
+                                    <p>План перепланировки с экспликацией помещений и расстановкой мебели (cм. пример). По тарифам «Оптимум» и «Беззаботный» по желанию Заказчика на дизайн квартиры проект может быть расширен бесплатными 3D планировками, которые
+                                        значительно более удобны для восприятия, чем, как правило, непривычные глазу чертежи.
+                                    </p>
+                                    <a class="js-openSecondModal" href="#" data-name="name2">см.пример</a>
+                                </li>
+                                <li>
+                                    <p>ППлан расстановки мебели и оборудования с габаритными размерами</p>
+                                    <a class="js-openSecondModal" href="#" data-name="name2">см.пример</a>
+                                </li>
+                                <li>
+                                    <p>Схема демонтажа перегородок и пр. элементов</p>
+                                    <a class="js-openSecondModal" href="#" data-name="name2">см.пример</a>
+                                </li>
+                                <li>
+                                    <p>План монтажа возводимых перегородок</p>
+                                    <a class="js-openSecondModal" href="#" data-name="name2">см.пример</a>
+                                </li>
+                            </ul>
+                            <a class="composition__btn" href="javascript:void(0)" data-active="0">Подробнее <span>
+									<svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
+										<path d="M14 0.484375L14 13.4844M14 13.4844L1 13.4844M14 13.4844L1 0.484374" stroke="#B55A2B">
+										</path>
+									</svg>
+								</span></a>
+                        </li>
+                        <li data-aos="fade-up" data-aos-once="false" class="composition__item-choice">
+                            <div>
+                                <span>02</span>
+                                <a href="javascript:void(0)">Планы освещения, инженерного и электротехнического
+									оборудования</a>
+                            </div>
+                            <ul class="composition__list-result">
+                                <li>
+                                    <p>Обмерные чертежи квартиры, дома и т.д.</p>
+                                    <a class="js-openSecondModal" href="#" data-name="name2">см.пример</a>
+                                </li>
+                                <li>
+                                    <p>План перепланировки с экспликацией помещений и расстановкой мебели (cм. пример). По тарифам «Оптимум» и «Беззаботный» по желанию Заказчика на дизайн квартиры проект может быть расширен бесплатными 3D планировками, которые
+                                        значительно более удобны для восприятия, чем, как правило, непривычные глазу чертежи.
+                                    </p>
+                                    <a class="js-openSecondModal" href="#" data-name="name2">см.пример</a>
+                                </li>
+                                <li>
+                                    <p>ППлан расстановки мебели и оборудования с габаритными размерами</p>
+                                    <a class="js-openSecondModal" href="#" data-name="name2">см.пример</a>
+                                </li>
+                                <li>
+                                    <p>Схема демонтажа перегородок и пр. элементов</p>
+                                    <a class="js-openSecondModal" href="#" data-name="name2">см.пример</a>
+                                </li>
+                                <li>
+                                    <p>План монтажа возводимых перегородок</p>
+                                    <a class="js-openSecondModal" href="#" data-name="name2">см.пример</a>
+                                </li>
+                            </ul>
+                            <a class="composition__btn" href="javascript:void(0)" data-active="0">Подробнее <span>
+									<svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
+										<path d="M14 0.484375L14 13.4844M14 13.4844L1 13.4844M14 13.4844L1 0.484374" stroke="#B55A2B">
+										</path>
+									</svg>
+								</span></a>
+                        </li>
+                        <li data-aos="fade-up" data-aos-once="false" class="composition__item-choice">
+                            <div>
+                                <span>03</span>
+                                <a href="javascript:void(0)">Развёртки стен помещений</a>
+                            </div>
+                            <ul class="composition__list-result">
+                                <li>
+                                    <p>Обмерные чертежи квартиры, дома и т.д.</p>
+                                    <a class="js-openSecondModal" href="#" data-name="name2">см.пример</a>
+                                </li>
+                                <li>
+                                    <p>План перепланировки с экспликацией помещений и расстановкой мебели (cм. пример). По тарифам «Оптимум» и «Беззаботный» по желанию Заказчика на дизайн квартиры проект может быть расширен бесплатными 3D планировками, которые
+                                        значительно более удобны для восприятия, чем, как правило, непривычные глазу чертежи.
+                                    </p>
+                                    <a class="js-openSecondModal" href="#" data-name="name2">см.пример</a>
+                                </li>
+                                <li>
+                                    <p>ППлан расстановки мебели и оборудования с габаритными размерами</p>
+                                    <a class="js-openSecondModal" href="#" data-name="name2">см.пример</a>
+                                </li>
+                                <li>
+                                    <p>Схема демонтажа перегородок и пр. элементов</p>
+                                    <a class="js-openSecondModal" href="#" data-name="name2">см.пример</a>
+                                </li>
+                                <li>
+                                    <p>План монтажа возводимых перегородок</p>
+                                    <a class="js-openSecondModal" href="#" data-name="name2">см.пример</a>
+                                </li>
+                            </ul>
+                            <a class="composition__btn" href="javascript:void(0)" data-active="0">Подробнее <span>
+									<svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
+										<path d="M14 0.484375L14 13.4844M14 13.4844L1 13.4844M14 13.4844L1 0.484374" stroke="#B55A2B">
+										</path>
+									</svg>
+								</span></a>
+                        </li>
+                        <li data-aos="fade-up" data-aos-once="false" class="composition__item-choice">
+                            <div>
+                                <span>04</span>
+                                <a href="javascript:void(0)">Ведомости материалов и устройств</a>
+                            </div>
+                            <ul class="composition__list-result">
+                                <li>
+                                    <p>Обмерные чертежи квартиры, дома и т.д.</p>
+                                    <a class="js-openSecondModal" href="#" data-name="name2">см.пример</a>
+                                </li>
+                                <li>
+                                    <p>План перепланировки с экспликацией помещений и расстановкой мебели (cм. пример). По тарифам «Оптимум» и «Беззаботный» по желанию Заказчика на дизайн квартиры проект может быть расширен бесплатными 3D планировками, которые
+                                        значительно более удобны для восприятия, чем, как правило, непривычные глазу чертежи.
+                                    </p>
+                                    <a class="js-openSecondModal" href="#" data-name="name2">см.пример</a>
+                                </li>
+                                <li>
+                                    <p>ППлан расстановки мебели и оборудования с габаритными размерами</p>
+                                    <a class="js-openSecondModal" href="#" data-name="name2">см.пример</a>
+                                </li>
+                                <li>
+                                    <p>Схема демонтажа перегородок и пр. элементов</p>
+                                    <a class="js-openSecondModal" href="#" data-name="name2">см.пример</a>
+                                </li>
+                                <li>
+                                    <p>План монтажа возводимых перегородок</p>
+                                    <a class="js-openSecondModal" href="#" data-name="name2">см.пример</a>
+                                </li>
+                            </ul>
+                            <a class="composition__btn" href="javascript:void(0)" data-active="0">Подробнее <span>
+									<svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
+										<path d="M14 0.484375L14 13.4844M14 13.4844L1 13.4844M14 13.4844L1 0.484374" stroke="#B55A2B">
+										</path>
+									</svg>
+								</span></a>
+                        </li>
+                        <li data-aos="fade-up" data-aos-once="false" class="composition__item-choice">
+                            <div>
+                                <span>05</span>
+                                <a href="javascript:void(0)">Материалы стилистического решения</a>
+                            </div>
+                            <ul class="composition__list-result">
+                                <li>
+                                    <p>Обмерные чертежи квартиры, дома и т.д.</p>
+                                    <a class="js-openSecondModal" href="#" data-name="name2">см.пример</a>
+                                </li>
+                                <li>
+                                    <p>План перепланировки с экспликацией помещений и расстановкой мебели (cм. пример). По тарифам «Оптимум» и «Беззаботный» по желанию Заказчика на дизайн квартиры проект может быть расширен бесплатными 3D планировками, которые
+                                        значительно более удобны для восприятия, чем, как правило, непривычные глазу чертежи.
+                                    </p>
+                                    <a class="js-openSecondModal" href="#" data-name="name2">см.пример</a>
+                                </li>
+                                <li>
+                                    <p>ППлан расстановки мебели и оборудования с габаритными размерами</p>
+                                    <a class="js-openSecondModal" href="#" data-name="name2">см.пример</a>
+                                </li>
+                                <li>
+                                    <p>Схема демонтажа перегородок и пр. элементов</p>
+                                    <a class="js-openSecondModal" href="#" data-name="name2">см.пример</a>
+                                </li>
+                                <li>
+                                    <p>План монтажа возводимых перегородок</p>
+                                    <a class="js-openSecondModal" href="#" data-name="name2">см.пример</a>
+                                </li>
+                            </ul>
+                            <a class="composition__btn" href="javascript:void(0)" data-active="0">Подробнее <span>
+									<svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
+										<path d="M14 0.484375L14 13.4844M14 13.4844L1 13.4844M14 13.4844L1 0.484374" stroke="#B55A2B">
+										</path>
+									</svg>
+								</span></a>
+                        </li>
+                    </ul>
+                </div>
+                <p data-aos="fade-up" data-aos-once="false" class="composition__description">Состав материалов разработки дизайна интерьера, выполняемых нами сверх рабочего комплекта планов и чертежей для ремонта квартиры, различается в зависимости от тарифного плана по проекту, но этим не ограничивается. В довесок к базовому
+                    набору опций вы можете подобрать дополнительные, в том числе заказать визуализации дополнительных комнат, не входящих в набор по «Оптимуму», либо не относящихся к основным помещениям объекта по «Беззаботному»: гардеробная, кладовая
+                    и т.п. В то же время, исключать какие-либо составляющие из списка документации рабочего комплекта (планов и чертежей, по которым в дальнейшем будут работать строители) крайне нежелательно, т.к. эта часть дизайн-проекта квартиры ценна
+                    именно тем, что является, фактически, заданием строительной бригаде на выполнение ремонтных работ. При наличии пробелов в задании, ремонт в этой части будет производиться в том виде, в котором это будет удобнее подрядчикам, и далеко
+                    не обязательно их выбор не станет причиной каких-либо нестыковок позже.</p>
+            </div>
+        </section>
+        <section class="exact-cost">
+            <div class="exact-cost__wrapper container">
+                <div class="exact-cost__content">
+                    <p class="exact-cost__title">
+                        <span>УЗНАЙТЕ</span>
+                        <span>ТОЧНУЮ СТОИМОСТЬ</span>
+                        <span>ВАШЕГО ДИЗАЙН-</span>
+                        <span>ПРОЕКТА</span>
+                    </p>
+                    <div data-aos="fade-up" data-aos-once="false">
+                        <a href="tel:+74993468963">+7 - 499 -346 - 8963</a>
+                        <p>обратитесь к нам, нажав на рыжую кнопку</p>
+                    </div>
+                </div>
+                <div class="isBtnDye">
+                    <div class="isBtnDye__link">
+                        <a class="js-hover-anim js-show-scroll" href="javascript:void(5)">
+                            <div style="background: url('img/feedback-active.svg'), #b55a2b;">
+                                <canvas data-src="img/feedback-static.svg" style="background: url('img/feedback-static.svg'), #FAF9F7;" class="milkload" width="300" height="300"></canvas>
+                            </div>
+                        </a>
+                    </div>
+                    <a class="isBtnDye__link-mobile" style="background-image: url('img/feedback-active.svg');" href="javascript:void(0)"></a>
+                </div>
+            </div>
+        </section>
+        <section class="examples">
+            <div class="examples__wrapper container">
+                <h2 data-aos="fade-up" data-aos-once="false" class="examples__title">
+                    ПРИМЕРЫ РАБОТ
+                </h2>
+                <div data-aos="fade-up" data-aos-once="false" class="examples__content">
+                    <div class="examples-swiper swiper">
+                        <div class="swiper-wrapper">
+                            <div class="examples__slide swiper-slide">
+                                <div class="examples__slide-content">
+                                    <img src="img/ex1.png" alt="img">
+                                    <a href="javascript:void(0)">ЖК Маяковский название в ....</a>
+                                    <p>Проект стильного интерьера квартиры 65 кв.м</p>
+                                </div>
+                            </div>
+                            <div class="examples__slide swiper-slide">
+                                <div class="examples__slide-content">
+                                    <img src="img/ex2.png" alt="img">
+                                    <a href="javascript:void(0)">Дизайн интерьера спальни</a>
+                                    <p>Проект стильного интерьера квартиры 65 кв.м</p>
+                                </div>
+                            </div>
+                            <div class="examples__slide swiper-slide">
+                                <div class="examples__slide-content">
+                                    <img src="img/ex3.png" alt="img">
+                                    <a href="javascript:void(0)">Дизайн квартиры 120 кв.м. в ЖК Донской Олимп</a>
+                                    <p>Проект стильного интерьера квартиры 65 кв.м</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="examples__link">
+                        <a href="javascript:void(0)">пЕРЕЙТИ В ПОРТФОЛИО</a>
+                    </div>
+                    <div class="examples__swiper-bar">
+                        <div class="examples__prev swiper-button-prev">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="39" height="15" viewBox="0 0 39 15" fill="none">
+								<path d="M0.626553 6.77727C0.236031 7.16779 0.236031 7.80096 0.626553 8.19148L6.99051 14.5554C7.38104 14.946 8.0142 14.946 8.40473 14.5554C8.79525 14.1649 8.79525 13.5318 8.40473 13.1412L2.74788 7.48438L8.40473 1.82752C8.79525 1.437 8.79525 0.803832 8.40473 0.413307C8.0142 0.0227828 7.38104 0.0227828 6.99051 0.413307L0.626553 6.77727ZM38.667 6.48438H1.33366V8.48438H38.667V6.48438Z" fill="#B55A2B"></path>
+							</svg>
+                        </div>
+                        <div class="examples__next swiper-button-next">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="39" height="15" viewBox="0 0 39 15" fill="none">
+								<path d="M38.3739 8.19149C38.7645 7.80096 38.7645 7.1678 38.3739 6.77727L32.01 0.41331C31.6195 0.0227855 30.9863 0.0227855 30.5958 0.41331C30.2052 0.803834 30.2052 1.437 30.5958 1.82752L36.2526 7.48438L30.5958 13.1412C30.2052 13.5318 30.2052 14.1649 30.5958 14.5554C30.9863 14.946 31.6194 14.946 32.01 14.5554L38.3739 8.19149ZM0.333496 8.48438L37.6668 8.48438L37.6668 6.48438L0.333496 6.48438L0.333496 8.48438Z" fill="#FAF9F7"></path>
+							</svg>
+                        </div>
+                    </div>
+                    <div class="examples__swiper-bar--mobile">
+                        <div class="examples__prev swiper-button-prev">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="39" height="15" viewBox="0 0 39 15" fill="none">
+								<path d="M0.626553 6.77727C0.236031 7.16779 0.236031 7.80096 0.626553 8.19148L6.99051 14.5554C7.38104 14.946 8.0142 14.946 8.40473 14.5554C8.79525 14.1649 8.79525 13.5318 8.40473 13.1412L2.74788 7.48438L8.40473 1.82752C8.79525 1.437 8.79525 0.803832 8.40473 0.413307C8.0142 0.0227828 7.38104 0.0227828 6.99051 0.413307L0.626553 6.77727ZM38.667 6.48438H1.33366V8.48438H38.667V6.48438Z" fill="#B55A2B"></path>
+							</svg>
+                        </div>
+                        <div class="examples__next swiper-button-next">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="39" height="15" viewBox="0 0 39 15" fill="none">
+								<path d="M38.3739 8.19149C38.7645 7.80096 38.7645 7.1678 38.3739 6.77727L32.01 0.41331C31.6195 0.0227855 30.9863 0.0227855 30.5958 0.41331C30.2052 0.803834 30.2052 1.437 30.5958 1.82752L36.2526 7.48438L30.5958 13.1412C30.2052 13.5318 30.2052 14.1649 30.5958 14.5554C30.9863 14.946 31.6194 14.946 32.01 14.5554L38.3739 8.19149ZM0.333496 8.48438L37.6668 8.48438L37.6668 6.48438L0.333496 6.48438L0.333496 8.48438Z" fill="#FAF9F7"></path>
+							</svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="steps">
+            <div class="steps__wrapper container">
+                <h2 data-aos="fade-up" data-aos-once="false" class="price__title">
+                    <span>ПОРЯДОК РАБОТЫ</span>
+                    <span>НАД ДИЗАЙН-ПРОЕКТОМ</span>
+                    <span>ИНТЕРЬЕРА</span>
+                </h2>
+                <div class="steps__content">
+                    <div data-aos="fade-right" data-aos-once="false" class="steps__item">
+                        <div class="steps__item-step">
+                            <span>0</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="115" height="130" viewBox="0 0 115 130" fill="none">
+								<path d="M26.3232 28.5565H73.5659C74.1354 28.5565 74.6816 28.3303 75.0843 27.9276C75.487 27.5248 75.7133 26.9786 75.7133 26.4091C75.7133 25.8396 75.487 25.2934 75.0843 24.8907C74.6816 24.488 74.1354 24.2617 73.5659 24.2617H26.3232C25.7537 24.2617 25.2075 24.488 24.8047 24.8907C24.402 25.2934 24.1758 25.8396 24.1758 26.4091C24.1758 26.9786 24.402 27.5248 24.8047 27.9276C25.2075 28.3303 25.7537 28.5565 26.3232 28.5565Z" fill="#FAF9F7"></path>
+								<path d="M26.3232 41.4432H73.5659C74.1354 41.4432 74.6816 41.217 75.0843 40.8143C75.487 40.4115 75.7133 39.8654 75.7133 39.2958C75.7133 38.7263 75.487 38.1801 75.0843 37.7774C74.6816 37.3747 74.1354 37.1484 73.5659 37.1484H26.3232C25.7537 37.1484 25.2075 37.3747 24.8047 37.7774C24.402 38.1801 24.1758 38.7263 24.1758 39.2958C24.1758 39.8654 24.402 40.4115 24.8047 40.8143C25.2075 41.217 25.7537 41.4432 26.3232 41.4432Z" fill="#FAF9F7"></path>
+								<path d="M26.3232 54.326H73.5659C74.1354 54.326 74.6816 54.0998 75.0843 53.6971C75.487 53.2944 75.7133 52.7482 75.7133 52.1786C75.7133 51.6091 75.487 51.0629 75.0843 50.6602C74.6816 50.2575 74.1354 50.0312 73.5659 50.0312H26.3232C25.7537 50.0312 25.2075 50.2575 24.8047 50.6602C24.402 51.0629 24.1758 51.6091 24.1758 52.1786C24.1758 52.7482 24.402 53.2944 24.8047 53.6971C25.2075 54.0998 25.7537 54.326 26.3232 54.326Z" fill="#FAF9F7"></path>
+								<path d="M26.3232 67.2089H73.5659C74.1354 67.2089 74.6816 66.9826 75.0843 66.5799C75.487 66.1772 75.7133 65.631 75.7133 65.0615C75.7133 64.4919 75.487 63.9457 75.0843 63.543C74.6816 63.1403 74.1354 62.9141 73.5659 62.9141H26.3232C25.7537 62.9141 25.2075 63.1403 24.8047 63.543C24.402 63.9457 24.1758 64.4919 24.1758 65.0615C24.1758 65.631 24.402 66.1772 24.8047 66.5799C25.2075 66.9826 25.7537 67.2089 26.3232 67.2089Z" fill="#FAF9F7"></path>
+								<path d="M26.3232 80.0917H43.5023C44.0719 80.0917 44.6181 79.8654 45.0208 79.4627C45.4235 79.06 45.6497 78.5138 45.6497 77.9443C45.6497 77.3747 45.4235 76.8285 45.0208 76.4258C44.6181 76.0231 44.0719 75.7969 43.5023 75.7969H26.3232C25.7537 75.7969 25.2075 76.0231 24.8047 76.4258C24.402 76.8285 24.1758 77.3747 24.1758 77.9443C24.1758 78.5138 24.402 79.06 24.8047 79.4627C25.2075 79.8654 25.7537 80.0917 26.3232 80.0917Z" fill="#FAF9F7"></path>
+								<path d="M111.18 51.3769C109.706 50.5147 107.95 50.2727 106.297 50.7041C104.644 51.1354 103.23 52.2048 102.365 53.6775L97.1868 62.5124V9.23021C97.1868 8.66068 96.9606 8.11448 96.5579 7.71177C96.1552 7.30905 95.609 7.08281 95.0394 7.08281H78.7498C78.7498 7.08281 72.2974 0.511781 72.0392 0.732963C71.8378 0.671822 71.6285 0.640708 71.4181 0.640625H9.14362C8.5741 0.640625 8.0279 0.866868 7.62518 1.26958C7.22247 1.6723 6.99623 2.2185 6.99623 2.78802V9.50212C5.15168 9.97761 3.51751 11.0527 2.35073 12.5584C1.18396 14.0641 0.550781 15.9149 0.550781 17.8198C0.550781 19.7246 1.18396 21.5755 2.35073 23.0811C3.51751 24.5868 5.15168 25.662 6.99623 26.1375V30.9761C5.15168 31.4516 3.51751 32.5267 2.35073 34.0324C1.18396 35.5381 0.550781 37.3889 0.550781 39.2937C0.550781 41.1986 1.18396 43.0494 2.35073 44.5551C3.51751 46.0608 5.15168 47.1359 6.99623 47.6114V52.45C5.15168 52.9255 3.51751 54.0006 2.35073 55.5063C1.18396 57.012 0.550781 58.8628 0.550781 60.7677C0.550781 62.6725 1.18396 64.5233 2.35073 66.029C3.51751 67.5347 5.15168 68.6099 6.99623 69.0854V71.7766C5.15168 72.2521 3.51751 73.3272 2.35073 74.8329C1.18396 76.3386 0.550781 78.1894 0.550781 80.0942C0.550781 81.9991 1.18396 83.8499 2.35073 85.3556C3.51751 86.8613 5.15168 87.9364 6.99623 88.4119V101.568C6.99623 102.138 7.22247 102.684 7.62518 103.087C8.0279 103.489 8.5741 103.716 9.14362 103.716H11.291V110.158C11.291 110.727 11.5173 111.274 11.92 111.676C12.3227 112.079 12.8689 112.305 13.4384 112.305H68.0069L66.5354 114.816C66.4037 115.041 66.3144 115.289 66.2721 115.546C66.27 115.559 66.2665 115.569 66.2646 115.582L66.2592 115.617V115.625L64.5413 127.017C64.4774 127.441 64.542 127.875 64.727 128.262C64.912 128.65 65.2087 128.973 65.579 129.19C65.9493 129.407 66.3761 129.508 66.8044 129.48C67.2326 129.452 67.6427 129.296 67.9817 129.033L77.1157 121.942C77.7008 121.487 77.9867 121.209 77.9413 120.836L82.9405 112.305H95.0394C95.609 112.305 96.1552 112.079 96.5579 111.676C96.9606 111.274 97.1868 110.727 97.1868 110.158V87.9961L113.48 60.1919C114.342 58.7175 114.584 56.9614 114.153 55.3089C113.722 53.6563 112.653 52.2423 111.18 51.3769V51.3769ZM107.381 54.857C107.792 54.7497 108.225 54.7668 108.627 54.9059C109.028 55.045 109.379 55.3001 109.635 55.6387C109.892 55.9773 110.042 56.3844 110.067 56.8084C110.092 57.2323 109.99 57.6542 109.776 58.0206L108.69 59.8728L104.986 57.7012L106.072 55.8491C106.213 55.6054 106.402 55.3922 106.627 55.2219C106.852 55.0516 107.108 54.9276 107.381 54.857ZM75.0316 117.306L71.3274 115.135L99.5559 66.9653L103.26 69.1369L75.0316 117.306ZM73.5655 7.97237L81.2655 15.6724H73.5655V7.97237ZM101.727 63.2597L102.813 61.4076L106.519 63.5792L105.433 65.4313L101.727 63.2597ZM92.892 11.3776V69.3573C92.8922 69.4966 92.9059 69.6356 92.9328 69.7723L88.5972 77.1706V17.8198C88.5975 17.5382 88.5423 17.2594 88.4347 16.9992C88.3271 16.739 88.1693 16.5026 87.9702 16.3035L87.9683 16.3013L83.0446 11.3776H92.892ZM11.291 4.93542H69.2707V17.8198C69.2707 18.3893 69.4969 18.9355 69.8996 19.3382C70.3024 19.7409 70.8486 19.9672 71.4181 19.9672H84.3025V84.4991L75.5577 99.4208H11.291V88.4122C12.7777 88.0293 14.1344 87.2548 15.2199 86.1692C16.3053 85.0836 17.0797 83.7267 17.4624 82.24C17.6043 81.6883 17.5213 81.1028 17.2315 80.6123C16.9418 80.1218 16.469 79.7665 15.9173 79.6245C15.6441 79.5542 15.3598 79.5384 15.0805 79.578C14.8012 79.6176 14.5324 79.7119 14.2896 79.8553C13.7991 80.1451 13.4437 80.6178 13.3018 81.1696C13.1595 81.7217 12.9083 82.2399 12.563 82.6936C12.2177 83.1474 11.7853 83.5276 11.291 83.8119V69.0856C12.7777 68.7028 14.1344 67.9282 15.2199 66.8426C16.3053 65.757 17.0797 64.4002 17.4624 62.9135C17.6043 62.3617 17.5213 61.7762 17.2315 61.2857C16.9418 60.7952 16.469 60.4399 15.9173 60.2979C15.3656 60.156 14.7801 60.239 14.2896 60.5288C13.7991 60.8185 13.4437 61.2913 13.3018 61.843C13.1595 62.3952 12.9083 62.9133 12.563 63.3671C12.2177 63.8208 11.7853 64.201 11.291 64.4854V47.6117C12.7777 47.2288 14.1344 46.4542 15.2199 45.3687C16.3053 44.2831 17.0797 42.9262 17.4624 41.4395C17.6043 40.8878 17.5213 40.3023 17.2315 39.8118C16.9418 39.3213 16.469 38.9659 15.9173 38.824C15.3656 38.682 14.7801 38.7651 14.2896 39.0548C13.7991 39.3446 13.4437 39.8173 13.3018 40.369C13.1595 40.9212 12.9083 41.4394 12.563 41.8931C12.2177 42.3469 11.7853 42.7271 11.291 43.0114V26.1377C12.7777 25.7549 14.1344 24.9803 15.2199 23.8947C16.3053 22.8091 17.0797 21.4523 17.4624 19.9656C17.6043 19.4138 17.5213 18.8283 17.2315 18.3378C16.9418 17.8473 16.469 17.492 15.9173 17.35C15.3656 17.2081 14.7801 17.2911 14.2896 17.5809C13.7991 17.8706 13.4437 18.3434 13.3018 18.8951C13.1595 19.4473 12.9083 19.9654 12.563 20.4192C12.2177 20.8729 11.7853 21.2531 11.291 21.5375V4.93542ZM4.84883 17.8198C4.84984 17.0669 5.04876 16.3274 5.42566 15.6756C5.80256 15.0239 6.34418 14.4826 6.99623 14.1061V21.5334C6.34418 21.157 5.80256 20.6157 5.42566 19.9639C5.04876 19.3121 4.84984 18.5727 4.84883 17.8198V17.8198ZM4.84883 39.2937C4.84984 38.5408 5.04876 37.8014 5.42566 37.1496C5.80256 36.4978 6.34418 35.9565 6.99623 35.5801V43.0074C6.34418 42.6309 5.80256 42.0897 5.42566 41.4379C5.04876 40.7861 4.84984 40.0467 4.84883 39.2937V39.2937ZM4.84883 60.7677C4.84984 60.0148 5.04876 59.2753 5.42566 58.6235C5.80256 57.9718 6.34418 57.4305 6.99623 57.054V64.4813C6.34418 64.1049 5.80256 63.5636 5.42566 62.9118C5.04876 62.26 4.84984 61.5206 4.84883 60.7677V60.7677ZM4.84883 80.0942C4.84984 79.3413 5.04876 78.6019 5.42566 77.9501C5.80256 77.2983 6.34418 76.7571 6.99623 76.3806V83.8079C6.34418 83.4314 5.80256 82.8902 5.42566 82.2384C5.04876 81.5866 4.84984 80.8472 4.84883 80.0942V80.0942ZM15.5858 108.01V103.716H73.0407L70.5237 108.01H15.5858ZM70.0386 119.358L71.9764 120.494L69.5874 122.348L70.0386 119.358ZM92.892 108.01H85.4567L92.892 95.3244V108.01Z" fill="#FAF9F7"></path>
+							</svg>
+                        </div>
+                        <div class="steps__item-content">
+                            <p class="steps__item-title">предпроектный</p>
+                            <div>
+                                <p>Размер оплаты:</p>
+                                <p>Бесплатно</p>
+                            </div>
+                            <a class="js-openModal" href="ajax/steps0.html">Подробнее</a>
+                        </div>
+                    </div>
+                    <div data-aos="fade-left" data-aos-once="false" class="steps__item">
+                        <div class="steps__item-step">
+                            <span>1</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="106" height="107" viewBox="0 0 106 107" fill="none">
+								<path d="M106 11.0102C106.007 9.57061 105.434 8.18896 104.41 7.17653L99.3081 2.07444C98.3004 1.05573 96.9268 0.483156 95.4938 0.484377H95.4762C94.052 0.485249 92.688 1.05817 91.6902 2.07444L68.5471 25.2175H22.9675V5.78442C22.9675 2.85718 20.5946 0.484377 17.6675 0.484377H14.1342C6.33229 0.493097 0.00969689 6.81569 0.000976562 14.6176V92.7938C0.443097 100.536 6.89196 106.564 14.6466 106.484H100.7C103.627 106.484 106 104.111 106 101.184V30.5176C106 27.5905 103.627 25.2175 100.7 25.2175H93.987L104.41 14.7943C105.424 13.796 105.997 12.4333 106 11.0102ZM63.2119 44.6508C62.8379 44.7017 62.4621 44.5702 62.2014 44.2974C61.9384 44.0362 61.8084 43.6696 61.848 43.301L62.5176 37.2945C62.5456 37.1689 62.581 37.0449 62.6236 36.9235L69.5824 43.8823C69.4677 43.9071 69.3634 43.9636 69.2432 43.9777L63.2119 44.6508ZM72.4673 41.7657L64.7364 34.0331L83.9929 14.7767L91.7202 22.5022L72.4673 41.7657ZM86.484 12.2767L89.1039 9.65852L96.8277 17.384L94.2095 20.004L86.484 12.2767ZM3.53428 14.6176C3.54021 8.7659 8.2825 4.02344 14.1342 4.01768H17.6675C18.6431 4.01768 19.4342 4.80862 19.4342 5.78425V76.4503C19.4342 77.426 18.6433 78.2169 17.6675 78.2169H14.1342C10.0756 78.2157 6.21317 79.9627 3.53428 83.0115V14.6176ZM100.7 28.7508C101.676 28.7508 102.467 29.5417 102.467 30.5176V101.184C102.467 102.159 101.676 102.95 100.7 102.95H14.6466C8.81444 103.048 3.92861 98.5586 3.53428 92.739V92.3503C3.54021 86.4986 8.2825 81.7563 14.1342 81.7504H17.6675C20.5946 81.7504 22.9674 79.3776 22.9674 76.4505V28.7508H65.0137L61.0016 32.7629C59.8816 33.8665 59.177 35.323 59.0071 36.8862L58.3376 42.9051C58.2824 43.4922 58.3382 44.0841 58.5018 44.6506H28.2674C27.2918 44.6506 26.5007 45.4415 26.5007 46.4173C26.5007 47.393 27.2916 48.1839 28.2674 48.1839H33.5675V95.8836C33.5675 96.8592 34.3584 97.6503 35.3342 97.6503C36.31 97.6503 37.1009 96.8594 37.1009 95.8836V71.1505H56.534V85.2837H44.1674C43.1917 85.2837 42.4008 86.0746 42.4008 87.0502C42.4008 88.0259 43.1917 88.817 44.1674 88.817H79.5004C81.4518 88.817 83.0337 87.2351 83.0337 85.2837V58.784C83.0337 57.8083 82.2428 57.0172 81.2671 57.0172C80.2915 57.0172 79.5004 57.8082 79.5004 58.784V67.6172H37.1008V48.1841H63.0847C63.257 48.1844 63.4294 48.175 63.6006 48.1558L69.6372 47.4687C71.1693 47.2948 72.5995 46.6139 73.7005 45.5341L90.4626 28.751H100.7V28.7508ZM79.5004 71.1505V85.2837H60.0671V71.1505H79.5004ZM101.919 12.2891L99.3257 14.8843L91.602 7.16049L94.1971 4.56532C94.5367 4.21685 95.002 4.01943 95.4886 4.01768C95.9839 4.0189 96.458 4.21877 96.8047 4.57247L101.914 9.67107C102.269 10.0209 102.469 10.4992 102.467 10.9978C102.465 11.4844 102.268 11.9499 101.919 12.2891Z" fill="#F7F3F0"></path>
+							</svg>
+                        </div>
+                        <div class="steps__item-content">
+                            <p class="steps__item-title">разработка планировочных решений</p>
+                            <div>
+                                <p>Размер оплаты:</p>
+                                <p>40% от общей стоимости</p>
+                            </div>
+                            <a class="js-openModal" href="ajax/steps1.html">Подробнее</a>
+                        </div>
+                    </div>
+                    <div data-aos="fade-right" data-aos-once="false" class="steps__item">
+                        <div class="steps__item-step">
+                            <span>2</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="106" height="107" viewBox="0 0 106 107" fill="none">
+								<path d="M71.2963 71.4627L69.4285 72.8195H71.7371H105.25V105.734H0.75V72.8195H5.97884H6.54031L6.69847 72.2807L27.502 1.41689L58.938 10.7224L48.701 45.5935L48.0812 47.7048L49.8614 46.4116L79.216 25.0875L98.4277 51.7542L71.2963 71.4627ZM49.7465 72.8195H51.2113L50.355 71.631L41.4616 59.2876L41.0215 58.6768L40.4123 59.1192L23.4188 71.4627L21.5508 72.8195H23.8595H49.7465ZM54.7002 78.3063V77.5563H53.9502H37.1815H36.4315V78.3063V100.248V100.998H37.1815H53.9502H54.7002V100.248V78.3063ZM60.1612 77.5563H59.4112V78.3063V100.248V100.998H60.1612H76.9299H77.6799V100.248V78.3063V77.5563H76.9299H60.1612ZM56.8038 72.5079L57.0283 72.8195H57.4124H61.1397H61.3834L61.5805 72.6763L72.7197 64.5851L73.3242 64.146L72.8875 63.5399L60.0799 45.7627L59.6398 45.1518L59.0306 45.5943L45.4441 55.463L44.8397 55.9021L45.2764 56.5083L56.8038 72.5079ZM91.241 51.1313L91.8454 50.6922L91.4087 50.0861L78.6011 32.3089L78.161 31.698L77.5518 32.1405L64.0624 41.9389L63.4579 42.3779L63.8947 42.9841L76.7023 60.7613L77.1424 61.3722L77.7516 60.9297L91.241 51.1313ZM40.1064 53.1352L40.4613 53.2403L40.7606 53.0225L41.6308 52.3893L41.8372 52.2391L41.9091 51.9941L46.4105 36.6625L46.6213 35.9444L45.9037 35.732L24.9442 29.5284L24.2235 29.3151L24.0117 30.0363L19.2702 46.1863L19.0594 46.9043L19.7769 47.1167L40.1064 53.1352ZM31.4083 7.5111L30.6875 7.29776L30.4758 8.01899L25.7682 24.0542L25.5574 24.7722L26.275 24.9846L47.2345 31.1891L47.9553 31.4025L48.167 30.6812L52.8745 14.6452L53.0853 13.9271L52.3678 13.7148L31.4083 7.5111ZM18.447 51.6605L17.7262 51.4471L17.5145 52.1684L11.7338 71.8582L11.4516 72.8195H12.4534H13.2637H13.5074L13.7045 72.6763L34.4012 57.6423L35.632 56.7482L34.1733 56.3163L18.447 51.6605ZM6.21094 77.5563H5.46094V78.3063V100.248V100.998H6.21094H30.9706H31.7206V100.248V78.3063V77.5563H30.9706H6.21094ZM99.7891 100.998H100.539V100.248V78.3063V77.5563H99.7891H83.1408H82.3908V78.3063V100.248V100.998H83.1408H99.7891Z" fill="#B55A2B" stroke="#FAF9F7" stroke-width="1.5"></path>
+							</svg>
+                        </div>
+                        <div class="steps__item-content">
+                            <p class="steps__item-title">разработка стилистического решения</p>
+                            <div>
+                                <p>Размер оплаты:</p>
+                                <p>30% от общей стоимости</p>
+                            </div>
+                            <a class="js-openModal" href="ajax/steps2.html">Подробнее</a>
+                        </div>
+                    </div>
+                    <div data-aos="fade-left" data-aos-once="false" class="steps__item">
+                        <div class="steps__item-step">
+                            <span>3</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="105" height="106" viewBox="0 0 105 106" fill="none">
+								<g clip-path="url(#clip0_1590_3348)">
+									<path d="M53.0683 37.707H13.6966C12.8471 37.707 12.1587 38.3957 12.1587 39.2449C12.1587 40.0943 12.8471 40.7828 13.6966 40.7828H53.0685C53.9179 40.7828 54.6064 40.0941 54.6064 39.2449C54.6064 38.3957 53.9179 37.707 53.0683 37.707Z" fill="#FAF9F7"></path>
+									<path d="M53.0683 48.5156H13.6966C12.8471 48.5156 12.1587 49.2043 12.1587 50.0535C12.1587 50.9027 12.8471 51.5914 13.6966 51.5914H53.0685C53.9179 51.5914 54.6064 50.9027 54.6064 50.0535C54.6064 49.2043 53.9179 48.5156 53.0683 48.5156Z" fill="#FAF9F7"></path>
+									<path d="M53.0683 59.3203H13.6966C12.8471 59.3203 12.1587 60.009 12.1587 60.8582C12.1587 61.7074 12.8471 62.3961 13.6966 62.3961H53.0685C53.9179 62.3961 54.6064 61.7074 54.6064 60.8582C54.6064 60.009 53.9179 59.3203 53.0683 59.3203Z" fill="#FAF9F7"></path>
+									<path d="M54.6064 71.6668C54.6064 70.8174 53.9179 70.1289 53.0685 70.1289H13.6966C12.8471 70.1289 12.1587 70.8176 12.1587 71.6668C12.1587 72.516 12.8471 73.2047 13.6966 73.2047H53.0685C53.9179 73.2047 54.6064 72.5162 54.6064 71.6668Z" fill="#FAF9F7"></path>
+									<path d="M13.6966 85.9648C12.8471 85.9648 12.1587 86.6535 12.1587 87.5027C12.1587 88.3519 12.8471 89.0406 13.6966 89.0406H33.4329C34.2823 89.0406 34.9708 88.3519 34.9708 87.5027C34.9708 86.6535 34.2823 85.9648 33.4329 85.9648H13.6966Z" fill="#FAF9F7"></path>
+									<path d="M70.7912 19.528V14.5376C70.7912 12.6365 69.2447 11.0898 67.3434 11.0898H35.7681C33.867 11.0898 32.3206 12.6365 32.3206 14.5376V19.528C32.3206 21.4291 33.867 22.9756 35.7681 22.9756H38.4346C39.284 22.9756 39.9724 22.2869 39.9724 21.4377C39.9724 20.5882 39.284 19.8998 38.4346 19.8998H35.7681C35.5633 19.8998 35.3965 19.7331 35.3965 19.5282V14.5376C35.3965 14.3327 35.5633 14.1658 35.7681 14.1658H67.3434C67.5485 14.1658 67.7152 14.3325 67.7152 14.5376V19.528C67.7152 19.7329 67.5485 19.8996 67.3434 19.8996H45.6246C44.7752 19.8996 44.0867 20.5882 44.0867 21.4375C44.0867 22.2869 44.7752 22.9754 45.6246 22.9754H67.3436C69.2447 22.9758 70.7912 21.4291 70.7912 19.528Z" fill="#FAF9F7"></path>
+									<path d="M82.2911 94.2658C81.4416 94.2658 80.7532 94.9544 80.7532 95.8037V97.8747C80.7532 100.374 78.7194 102.408 76.2193 102.408H8.18218C5.68248 102.408 3.64852 100.375 3.64852 97.8747V23.9511C3.64852 23.6182 3.68748 23.2917 3.757 22.9741H17.7604C20.6839 22.9741 23.0624 20.5956 23.0624 17.672V3.66883C23.3801 3.59931 23.7064 3.56034 24.0392 3.56034H76.2191C78.719 3.56034 80.753 5.5941 80.753 8.094V28.5694C80.753 29.4188 81.4414 30.1073 82.2908 30.1073C83.1403 30.1073 83.8287 29.4186 83.8287 28.5694V8.0938C83.8289 3.89811 80.4152 0.484375 76.2193 0.484375H24.0394C22.0069 0.484375 20.0958 1.27598 18.6586 2.71316L2.80134 18.5704C1.36415 20.0076 0.572754 21.9185 0.572754 23.9513V97.8749C0.572754 102.071 3.98628 105.484 8.18218 105.484H76.2193C80.4152 105.484 83.8289 102.071 83.8289 97.8749V95.8039C83.8289 94.9544 83.1405 94.2658 82.2911 94.2658ZM19.9867 5.7352V17.672C19.9867 18.8996 18.9879 19.8983 17.7604 19.8983H5.82357L19.9867 5.7352Z" fill="#FAF9F7"></path>
+									<path d="M103.355 55.4466C104.435 53.862 104.714 51.9074 104.121 50.0838C103.529 48.2603 102.154 46.8432 100.349 46.1959C99.152 45.7665 98.3532 44.6673 98.3151 43.3958C98.257 41.4793 97.334 39.7337 95.7825 38.6066C94.2315 37.4797 92.2858 37.1415 90.4458 37.6784C89.2239 38.0349 87.9326 37.6149 87.1541 36.6089C85.9808 35.0924 84.2081 34.2227 82.2907 34.2227C80.3734 34.2227 78.6005 35.0924 77.427 36.6089C76.6485 37.6151 75.3564 38.0344 74.1355 37.6784C72.2954 37.1411 70.3498 37.4797 68.7984 38.6066C67.2471 39.7337 66.3245 41.4791 66.2663 43.3956C66.2279 44.6671 65.4293 45.7661 64.2319 46.1957C62.4272 46.843 61.0521 48.2603 60.4599 50.0836C59.8674 51.9072 60.1467 53.862 61.2263 55.4464C61.9424 56.4978 61.9424 57.8563 61.2263 58.9075C60.1467 60.4921 59.8674 62.4467 60.4599 64.2703C61.0521 66.0938 62.4272 67.5109 64.2319 68.1584C65.4293 68.588 66.2281 69.687 66.2663 70.9585C66.3198 72.7214 67.1276 74.3778 68.4832 75.5026C69.3775 76.245 70.4519 76.7095 71.5764 76.8647V90.8671C71.5764 92.0485 72.2172 93.1406 73.2486 93.7166C74.2787 94.2923 75.545 94.2667 76.5518 93.6467L82.1924 90.1743C82.2843 90.1175 82.3391 90.1431 82.3897 90.1743L88.03 93.6467C89.0363 94.266 90.3022 94.2927 91.3334 93.7164C92.3649 93.1402 93.0056 92.0481 93.0056 90.8669V76.8643C94.1296 76.7093 95.204 76.2448 96.0984 75.5026C97.4541 74.3778 98.2621 72.7216 98.3157 70.9583C98.3538 69.6868 99.1526 68.5876 100.35 68.1582C102.155 67.5109 103.53 66.0936 104.122 64.2701C104.715 62.4465 104.435 60.4919 103.356 58.9073C102.639 57.8565 102.639 56.498 103.355 55.4466ZM89.6421 91.0274L84.0016 87.5551C82.9531 86.9097 81.6291 86.9087 80.5795 87.5551L74.939 91.0272C74.8106 91.1054 74.6521 91.0153 74.6521 90.8669V76.5727C75.7095 76.4503 76.7579 76.8805 77.427 77.7454C78.6007 79.2617 80.3734 80.1314 82.2909 80.1314C84.2081 80.1314 85.9808 79.2617 87.1541 77.7454C87.8235 76.8803 88.872 76.4503 89.9292 76.5727V90.8669C89.9292 91.0164 89.7686 91.1056 89.6421 91.0274ZM100.813 60.6398C101.353 61.4318 101.492 62.4086 101.196 63.32C100.9 64.2313 100.213 64.9397 99.3107 65.2633C96.915 66.1226 95.3174 68.3216 95.2405 70.8656C95.2132 71.7599 94.8201 72.5661 94.1337 73.1358C93.362 73.7763 92.3169 74.0179 91.3075 73.7234C88.8644 73.0105 86.279 73.8505 84.7212 75.8631C84.1349 76.6209 83.2488 77.0557 82.2905 77.0557C81.3323 77.0557 80.4462 76.6211 79.8595 75.8631C78.6702 74.3259 76.8817 73.4728 75.0149 73.4728C74.437 73.4728 73.8513 73.5546 73.2738 73.7232C72.2545 74.0201 71.2125 73.7711 70.447 73.1356C69.7606 72.5659 69.3675 71.7597 69.3406 70.8656C69.2635 68.3216 67.6659 66.1226 65.27 65.2631C64.3681 64.9395 63.681 64.2313 63.3847 63.32C63.0886 62.4086 63.228 61.4316 63.7678 60.6396C65.2007 58.5361 65.2007 55.8182 63.7678 53.7147C63.228 52.9227 63.0886 51.9457 63.3847 51.0341C63.6808 50.1228 64.3681 49.4144 65.27 49.091C67.6659 48.2315 69.2635 46.0325 69.3406 43.4885C69.3695 42.5306 69.8305 41.6582 70.6059 41.095C71.3809 40.5317 72.353 40.3627 73.2736 40.6309C75.7161 41.344 78.3021 40.5038 79.8595 38.4912C80.446 37.7332 81.3319 37.2984 82.2905 37.2984C83.2488 37.2984 84.1347 37.733 84.7212 38.4909C86.2788 40.5038 88.8636 41.3438 91.3073 40.6309C92.2273 40.3623 93.1994 40.5315 93.9748 41.0948C94.7502 41.658 95.2116 42.5306 95.2403 43.4883C95.3174 46.0323 96.915 48.2315 99.3107 49.0908C100.213 49.4142 100.9 50.1226 101.196 51.0339C101.492 51.9453 101.353 52.9225 100.813 53.7143C99.3798 55.818 99.3798 58.5363 100.813 60.6398Z" fill="#FAF9F7"></path>
+									<path d="M82.2911 44.2852C75.1835 44.2852 69.4011 50.0675 69.4011 57.1751C69.4011 64.2827 75.1835 70.0651 82.2911 70.0651C89.3985 70.0651 95.1809 64.2827 95.1809 57.1751C95.1809 50.0675 89.3985 44.2852 82.2911 44.2852ZM82.2911 66.9894C76.8795 66.9894 72.4769 62.5867 72.4769 57.1753C72.4769 51.7639 76.8795 47.3611 82.2911 47.3611C87.7027 47.3611 92.1051 51.7637 92.1051 57.1753C92.1051 62.5869 87.7025 66.9894 82.2911 66.9894Z" fill="#FAF9F7"></path>
+								</g>
+								<defs>
+									<clipPath id="clip0_1590_3348">
+										<rect width="105" height="105" fill="white" transform="translate(0 0.484375)"></rect>
+									</clipPath>
+								</defs>
+							</svg>
+                        </div>
+                        <div class="steps__item-content">
+                            <p class="steps__item-title">разработка проектной документации</p>
+                            <div>
+                                <p>Размер оплаты:</p>
+                                <p>30% от общей стоимости</p>
+                            </div>
+                            <a class="js-openModal" href="ajax/steps3.html">Подробнее</a>
+                        </div>
+                    </div>
+                    <div data-aos="fade-right" data-aos-once="false" class="steps__item">
+                        <div class="steps__item-step">
+                            <span>!</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="116" height="117" viewBox="0 0 116 117" fill="none">
+								<path d="M57.9995 33.625L57.9995 68.8393" stroke="#FAF9F7" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path>
+								<path d="M58 80.5366L58.0474 80.4844" stroke="#FAF9F7" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"></path>
+								<path d="M58.0003 106.815C84.6948 106.815 106.334 85.1763 106.334 58.4818C106.334 31.7873 84.6948 10.1484 58.0003 10.1484C31.3058 10.1484 9.66699 31.7873 9.66699 58.4818C9.66699 67.2833 12.0208 75.5434 16.134 82.6484L12.0837 104.398L33.8337 100.348C41.1781 104.597 49.5155 106.828 58.0003 106.815V106.815Z" stroke="#FAF9F7" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path>
+							</svg>
+                        </div>
+                        <div class="steps__item-content">
+                            <p class="steps__item-title">ВАЖНО</p>
+                            <a class="js-openModal" href="ajax/steps4.html">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="feedback">
+            <div class="feedback__wrapper container">
+                <div class="main__item about__title-decor js-hover js-hover-main js-show-scroll" data-img-src="img/feedback.png" data-imgmasksrc="img/imgMask.png">
+                    <div class="about__canvas-wrapper js-show-scroll-canvas js-show-scroll-scale">
+                        <canvas class="canvas canvas-main js-canvas"></canvas>
+                    </div>
+                </div>
+                <div class="main__item about__title-decor js-hover js-hover-main js-show-scroll" data-img-src="img/about.png" data-imgmasksrc="img/imgMask.png">
+                    <div class="about__canvas-wrapper js-show-scroll-canvas js-show-scroll-scale">
+                        <canvas class="canvas canvas-main js-canvas"></canvas>
+                    </div>
+                </div>
+                <span class="about__num">(6)</span>
+                <h2 data-aos="fade-up" data-aos-once="false" class="feedback__title">
+                    <span>Хотите начать</span>
+                    <span>работать</span>
+                    <span> с нами ?</span>
+                </h2>
+                <h3 data-aos-once="false" data-aos="zoom-in">Не стесняйтесь обращаться к нам, мы ответим на все ваши вопросы
+                </h3>
+                <div class="feedback__contacts">
+                    <a data-aos="fade-right" data-aos-once="false" class="feedback__email" href="mailto:info@instilier.ru">info@instilier.ru</a>
+                    <p data-aos="fade-left" data-aos-once="false" class="feedback__loc">Москва, Литовский б-р 1-221</p>
+                    <div class="feedback__tel">
+                        <a href="tel:+74993468963">+7 - 499 -346 - 8963</a>
+                        <p>ПН-ПТ: 8:00 - 19:00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="isBtnDye">
+                <div class="isBtnDye__link">
+                    <a class="js-hover-anim js-show-scroll" href="javascript:void(5)">
+                        <div style="background: url('img/feedback-active.svg'), #b55a2b;">
+                            <canvas data-src="img/feedback-static.svg" style="background: url('img/feedback-static.svg'), #FAF9F7;" class="milkload" width="300" height="300"></canvas>
+                        </div>
+                    </a>
+                </div>
+                <a class="isBtnDye__link-mobile" style="background-image: url('img/feedback-active.svg');" href="javascript:void(0)"></a>
+            </div>
+        </section>
+        <section data-aos="fade-up" data-aos-once="false" class="awards">
+            <div class="awards__wrapper container">
+                <h2 class="awards__title">НАШИ НАГРАДЫ</h2>
+                <ul class="awards__list">
+                    <li data-title="первый" class="awards__item">
+                        <a href="javascript:void(0)">
+                            <img src="img/awards0.png" alt="">
+                        </a>
+                    </li>
+                    <li data-title="второй" class="awards__item">
+                        <a href="javascript:void(0)">
+                            <img src="img/awards1.png" alt="img">
+                        </a>
+                    </li>
+                    <li data-title="третий" class="awards__item">
+                        <a href="javascript:void(0)">
+                            <img src="img/awards2.png" alt="img">
+                        </a>
+                    </li>
+                    <li data-title="четвёртый" class="awards__item">
+                        <a href="javascript:void(0)">
+                            <img src="img/awards3.png" alt="img">
+                        </a>
+                    </li>
+                    <li data-title="пятый" class="awards__item">
+                        <a href="javascript:void(0)">
+                            <img src="img/awards4.png" alt="img">
+                        </a>
+                    </li>
+                    <li data-title="шестой" class="awards__item">
+                        <a href="javascript:void(0)">
+                            <img src="img/awards5.png" alt="img">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <div class="search__link">
+            <a href="javascript:void(0)">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+					<path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="#FCEEE9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+					<path d="M21.0004 21L16.6504 16.65" stroke="#FCEEE9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+				</svg>
+                <span>поиск</span>
+            </a>
+        </div>
+        <div class="fixed__bar">
+            <div class="fixed__bar-social">
+                <div class="fixed__bar-social-list-wrapper">
+                    <ul class="fixed__bar-social-list ">
+                        <li>
+                            <a href="javascript:void(0)">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M16.1241 13.7865C15.8995 13.6748 14.7985 13.1363 14.5935 13.0613C14.3885 12.987 14.2393 12.9503 14.0894 13.1738C13.9401 13.3958 13.5113 13.8983 13.381 14.0468C13.2498 14.196 13.1195 14.214 12.8956 14.103C12.6718 13.9905 11.9499 13.7558 11.0945 12.9968C10.4291 12.4058 9.97918 11.676 9.8488 11.4525C9.71843 11.2298 9.83448 11.109 9.94677 10.998C10.0478 10.8983 10.1706 10.7378 10.2829 10.608C10.3952 10.4775 10.4321 10.3845 10.5067 10.2353C10.5821 10.0868 10.5444 9.95702 10.4879 9.84527C10.4321 9.73352 9.98445 8.63627 9.79756 8.19002C9.61594 7.75577 9.4313 7.81502 9.29414 7.80752C9.16302 7.80152 9.0138 7.80002 8.86459 7.80002C8.71537 7.80002 8.47271 7.85552 8.26773 8.07902C8.06199 8.30177 7.48397 8.84102 7.48397 9.93827C7.48397 11.0348 8.28582 12.0945 8.3981 12.2438C8.51039 12.3923 9.97691 14.6438 12.2234 15.609C12.7585 15.8385 13.1752 15.9758 13.5 16.0778C14.0366 16.248 14.5249 16.224 14.9108 16.1663C15.3404 16.1025 16.2356 15.627 16.4225 15.1065C16.6087 14.586 16.6087 14.1398 16.5529 14.0468C16.4971 13.9538 16.3479 13.8983 16.1234 13.7865H16.1241ZM12.038 19.3388H12.035C10.7007 19.339 9.39089 18.982 8.24286 18.3053L7.97156 18.1448L5.15155 18.8813L5.90441 16.1453L5.72731 15.8648C4.98134 14.683 4.58657 13.3153 4.58861 11.9198C4.59012 7.83227 7.93162 4.50678 12.041 4.50678C14.0306 4.50678 15.901 5.27928 17.3073 6.68027C18.0009 7.36771 18.5506 8.1852 18.9247 9.08544C19.2988 9.98569 19.4898 10.9508 19.4867 11.925C19.4852 16.0125 16.1437 19.3388 12.038 19.3388ZM18.3774 5.61603C17.5471 4.78422 16.5591 4.12468 15.4708 3.67563C14.3825 3.22658 13.2154 2.99694 12.0373 3.00003C7.09813 3.00003 3.07687 7.00127 3.07536 11.919C3.07461 13.491 3.48683 15.0255 4.27134 16.3778L3 21L7.75075 19.7595C9.06495 20.4721 10.5377 20.8455 12.0343 20.8455H12.038C16.9772 20.8455 20.9984 16.8443 21 11.9258C21.0036 10.7537 20.7737 9.59259 20.3235 8.50955C19.8734 7.4265 19.2119 6.44303 18.3774 5.61603Z" fill="#B55A2B"></path>
+								</svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M18.92 5.09205L4.7471 10.7942C3.77986 11.1995 3.78545 11.7624 4.56964 12.0135L8.2084 13.1978L16.6274 7.65579C17.0255 7.40309 17.3892 7.53903 17.0903 7.81592L10.2692 14.2386H10.2676L10.2692 14.2394L10.0182 18.1526C10.3859 18.1526 10.5482 17.9766 10.7544 17.769L12.5218 15.9758L16.1982 18.809C16.876 19.1984 17.3628 18.9983 17.5315 18.1543L19.9448 6.28802C20.1918 5.25468 19.5667 4.78681 18.92 5.09205Z" fill="#B55A2B"></path>
+								</svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="js-application-link" href="./ajax/application.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
+									<path d="M3.33333 2.6665H14C14.7333 2.6665 15.3333 3.2665 15.3333 3.99984V11.9998C15.3333 12.7332 14.7333 13.3332 14 13.3332H3.33333C2.6 13.3332 2 12.7332 2 11.9998V3.99984C2 3.2665 2.6 2.6665 3.33333 2.6665Z" stroke="#B55A2B" stroke-linecap="round" stroke-linejoin="round"></path>
+									<path d="M15.3333 4L8.66667 8.66667L2 4" stroke="#B55A2B" stroke-linecap="round" stroke-linejoin="round"></path>
+								</svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+									<path d="M15.223 11.5535V13.7201C15.2238 13.9213 15.1826 14.1204 15.1021 14.3047C15.0215 14.4889 14.9033 14.6544 14.7551 14.7904C14.6069 14.9263 14.4319 15.0299 14.2413 15.0943C14.0508 15.1587 13.8489 15.1827 13.6486 15.1646C11.4262 14.9231 9.29141 14.1637 7.41579 12.9473C5.67078 11.8385 4.19131 10.359 3.08246 8.61401C1.86189 6.72988 1.1023 4.58473 0.865237 2.35235C0.847189 2.15263 0.870925 1.95134 0.934932 1.7613C0.998939 1.57125 1.10182 1.39662 1.23701 1.24852C1.37221 1.10041 1.53676 0.982081 1.7202 0.901057C1.90363 0.820033 2.10193 0.778091 2.30246 0.777902H4.46913C4.81963 0.774452 5.15942 0.89857 5.42518 1.12712C5.69093 1.35567 5.86452 1.67306 5.91357 2.02012C6.00502 2.71351 6.17462 3.39432 6.41913 4.04957C6.5163 4.30807 6.53733 4.58901 6.47973 4.85909C6.42213 5.12918 6.28831 5.37709 6.09413 5.57346L5.17691 6.49068C6.20503 8.2988 7.70212 9.79589 9.51024 10.824L10.4275 9.90679C10.6238 9.71261 10.8717 9.57879 11.1418 9.52119C11.4119 9.46359 11.6929 9.48462 11.9514 9.58179C12.6066 9.8263 13.2874 9.9959 13.9808 10.0873C14.3316 10.1368 14.652 10.3136 14.8811 10.5839C15.1101 10.8542 15.2318 11.1993 15.223 11.5535Z" stroke="#B55A2B" stroke-linecap="round" stroke-linejoin="round"></path>
+								</svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <a class="fixed__bar-social-btn js-social-open" href="javascript:void(0)">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="34" height="42" viewBox="0 0 48 44" fill="none">
+						<mask id="path-1-inside-1_1298:1130" fill="white">
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M45.7229 27.2798C46.9978 24.7405 47.7155 21.8732 47.7155 18.8382C47.7155 8.43417 39.2814 0 28.8773 0C18.4732 0 10.0391 8.43417 10.0391 18.8382C10.0391 29.2423 18.4732 37.6765 28.8773 37.6765C32.4095 37.6765 35.7147 36.7043 38.5399 35.013L47.1072 38.6611L45.7229 27.2798Z"></path>
+						</mask>
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M45.7229 27.2798C46.9978 24.7405 47.7155 21.8732 47.7155 18.8382C47.7155 8.43417 39.2814 0 28.8773 0C18.4732 0 10.0391 8.43417 10.0391 18.8382C10.0391 29.2423 18.4732 37.6765 28.8773 37.6765C32.4095 37.6765 35.7147 36.7043 38.5399 35.013L47.1072 38.6611L45.7229 27.2798Z" fill="#F7F3F0"></path>
+						<path d="M45.7229 27.2798L44.8292 26.8311L44.6938 27.1009L44.7302 27.4005L45.7229 27.2798ZM38.5399 35.013L38.9317 34.0929L38.4631 33.8934L38.0262 34.155L38.5399 35.013ZM47.1072 38.6611L46.7154 39.5811L48.309 40.2597L48.0999 38.5403L47.1072 38.6611ZM46.7155 18.8382C46.7155 21.7139 46.0358 24.4279 44.8292 26.8311L46.6166 27.7285C47.9598 25.0532 48.7155 22.0325 48.7155 18.8382H46.7155ZM28.8773 1C38.7291 1 46.7155 8.98645 46.7155 18.8382H48.7155C48.7155 7.88188 39.8337 -1 28.8773 -1V1ZM11.0391 18.8382C11.0391 8.98645 19.0255 1 28.8773 1V-1C17.9209 -1 9.03906 7.88188 9.03906 18.8382H11.0391ZM28.8773 36.6765C19.0255 36.6765 11.0391 28.69 11.0391 18.8382H9.03906C9.03906 29.7946 17.9209 38.6765 28.8773 38.6765V36.6765ZM38.0262 34.155C35.352 35.756 32.2236 36.6765 28.8773 36.6765V38.6765C32.5954 38.6765 36.0775 37.6527 39.0535 35.871L38.0262 34.155ZM47.499 37.741L38.9317 34.0929L38.1481 35.933L46.7154 39.5811L47.499 37.741ZM44.7302 27.4005L46.1145 38.7818L48.0999 38.5403L46.7156 27.159L44.7302 27.4005Z" fill="#B55A2B" mask="url(#path-1-inside-1_1298:1130)"></path>
+						<mask id="path-3-outside-2_1298:1130" maskUnits="userSpaceOnUse" x="-0.515625" y="13.8232" width="29" height="30" fill="black">
+							<rect fill="white" x="-0.515625" y="13.8232" width="29" height="30"></rect>
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M2.40135 34.0005C1.50476 32.2153 1.00003 30.1993 1.00003 28.0654C1.00003 20.752 6.92875 14.8232 14.2422 14.8232C21.5557 14.8232 27.4844 20.752 27.4844 28.0654C27.4844 35.3789 21.5557 41.3076 14.2422 41.3076C11.7594 41.3076 9.43615 40.6243 7.4503 39.4355L1.4284 41.9997L2.40135 34.0005Z"></path>
+						</mask>
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M2.40135 34.0005C1.50476 32.2153 1.00003 30.1993 1.00003 28.0654C1.00003 20.752 6.92875 14.8232 14.2422 14.8232C21.5557 14.8232 27.4844 20.752 27.4844 28.0654C27.4844 35.3789 21.5557 41.3076 14.2422 41.3076C11.7594 41.3076 9.43615 40.6243 7.4503 39.4355L1.4284 41.9997L2.40135 34.0005Z" fill="#F7F3F0"></path>
+						<path d="M2.40135 34.0005L3.29498 33.5517L3.43049 33.8216L3.39403 34.1213L2.40135 34.0005ZM7.4503 39.4355L7.05853 38.5154L7.52703 38.3159L7.96394 38.5775L7.4503 39.4355ZM1.4284 41.9997L1.82018 42.9198L0.226585 43.5984L0.435715 41.879L1.4284 41.9997ZM2.00003 28.0654C2.00003 30.04 2.46675 31.9026 3.29498 33.5517L1.50772 34.4493C0.542772 32.528 3.05176e-05 30.3586 3.05176e-05 28.0654H2.00003ZM14.2422 15.8232C7.48104 15.8232 2.00003 21.3042 2.00003 28.0654H3.05176e-05C3.05176e-05 20.1997 6.37647 13.8232 14.2422 13.8232V15.8232ZM26.4844 28.0654C26.4844 21.3042 21.0034 15.8232 14.2422 15.8232V13.8232C22.1079 13.8232 28.4844 20.1997 28.4844 28.0654H26.4844ZM14.2422 40.3076C21.0034 40.3076 26.4844 34.8266 26.4844 28.0654H28.4844C28.4844 35.9311 22.1079 42.3076 14.2422 42.3076V40.3076ZM7.96394 38.5775C9.79889 39.676 11.9453 40.3076 14.2422 40.3076V42.3076C11.5735 42.3076 9.07341 41.5726 6.93667 40.2935L7.96394 38.5775ZM1.03662 41.0797L7.05853 38.5154L7.84208 40.3556L1.82018 42.9198L1.03662 41.0797ZM3.39403 34.1213L2.42108 42.1205L0.435715 41.879L1.40866 33.8798L3.39403 34.1213Z" fill="#B55A2B" mask="url(#path-3-outside-2_1298:1130)"></path>
+					</svg>
+                </a>
+            </div>
+            <div class="upArrow">
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19" fill="none">
+						<path d="M1 1L18 1M18 1L18 18M18 1L1 18" stroke="#B55A2B"></path>
+					</svg>
+                </a>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__decor"></div>
+        <div class="footer__wrapper container">
+            <div class="footer__content">
+                <p class="footer__studio">ООО "Студия Инстильер" 2013-2021 (с)</p>
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a href="javascript:void(0)">VK</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="javascript:void(0)">Facebook</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="javascript:void(0)">Houzz</a>
+                    </li>
+                </ul>
+                <a class="footer__copy" href="javascript:void(0)">СДЕЛАНО В СТУДИИ МАГВАЙ</a>
+            </div>
+        </div>
+    </footer>
+    <canvas width="600" id="stage"></canvas>
+
+    <script src="libs/js/lightgallery.umd.js"></script>
+    <script src="libs/js/lg-thumbnail.umd.js"></script>
+    <script src="libs/js/lg-zoom.umd.js"></script>
+    <script src="libs/js/jquery-3.6.0.min.js"></script>
+    <script src="libs/js/jquery.inview.js"></script>
+    <script src="libs/js/aos.js"></script>
+    <script src="libs/js/anime.min.js"></script>
+    <script src="libs/js/fancybox.umd.js"></script>
+    <script src="libs/js/swiper-bundle.min.js"></script>
+    <script src="libs/js/gsap.min.js"></script>
+    <script src="libs/js/jquery.modal.min.js"></script>
+    <script src="libs/js/popper.min.js"></script>
+    <script src="libs/js/tippy-bundle.umd.js"></script>
+    <script src="libs/js/toastr.min.js"></script>
+    <script src="nav-del/scripts/demo-menu.js" data-demo-data="nav-del/demo/data.json" async="" defer=""></script>
+    <script src="libs/js/jquery.inputmask.min.js"></script>
+    <script src="libs/js/inputmask.min.js"></script>
+    <script type="module" src="js/main.js"></script>
+</body>
+
+</html>

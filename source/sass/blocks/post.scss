@@ -1,0 +1,72 @@
+.post {
+	margin-bottom: 60px;
+
+	@include mq($m) {
+		margin-bottom: 80px;
+	}
+
+	@include mq($l) {
+		margin-bottom: 204px;
+	}
+
+	&__caption {
+		margin: 0 0 20px;
+		font-family: $HelveticaNeue, "Arial", sans-serif;
+		font-size: 20px;
+		line-height: 150%;
+		text-transform: uppercase;
+		text-align: center;
+	}
+
+	&__image {
+		display: block;
+		width: 100%;
+
+		@media screen and (max-width: $m - 1) {
+			position: relative;
+			width: 100vw;
+			left: 50%;
+			margin-left: -50vw;
+			margin-bottom: 23px;
+		}
+
+		@include mq($m) {
+			margin-bottom: 105px;
+		}
+
+		@include mq($l) {
+			margin-bottom: 83px;
+		}
+
+		&::before {
+			padding-bottom: 300 / 375 * 100%;
+
+			@include mq($m) {
+				padding-bottom: 600 / 708 * 100%;
+			}
+
+			@include mq($l) {
+				padding-bottom: 897 / 1820 * 100%;
+			}
+		}
+	}
+
+	&__text {
+		font-family: $HelveticaNeue, "Arial", sans-serif;
+		font-size: 14px;
+		line-height: 200%;
+
+		@include mq($m) {
+			font-size: 20px;
+		}
+
+		@include mq($l) {
+			column-count: 2;
+			column-gap: 130px;
+		}
+
+		p {
+			margin-bottom: 40px;
+		}
+	}
+}

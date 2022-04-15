@@ -1,0 +1,42 @@
+.page-pag {
+	display: grid;
+	grid-template-columns: min-content min-content;
+	grid-column-gap: 26px;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 192px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 144px;
+
+	@include mq($m) {
+		margin-bottom: 100px;
+	}
+
+	@include mq($l) {
+		margin-bottom: 226px;
+	}
+
+	&__link {
+		display: block;
+		width: 28px;
+		height: 8px;
+		background-repeat: no-repeat;
+		transition: width $time linear;
+		flex-shrink: 0;
+
+		&:hover {
+			width: 59px;
+		}
+
+		&--prev {
+			background-image: url(../img/i-arrow-prev.svg);
+			background-position: left center;
+		}
+
+		&--next {
+			background-image: url(../img/i-arrow-next.svg);
+			background-position: right center;
+		}
+	}
+}

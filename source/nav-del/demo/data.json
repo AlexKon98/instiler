@@ -1,0 +1,54 @@
+{
+	"projectTitle": "Demo menu",
+	"pages": [{
+		"title": "Главная",
+		"href": "index.html",
+		"thumb": "demo/thumbs/index.jpg"
+	}, {
+		"title": "Наши публикации",
+		"href": "blog.html",
+		"thumb": "demo/thumbs/index.jpg"
+	}, {
+		"title": "Пост",
+		"href": "post.html",
+		"thumb": "demo/thumbs/index.jpg"
+	}, {
+		"title": "Пост2",
+		"href": "post2.html",
+		"thumb": "demo/thumbs/index.jpg"
+	}, {
+		"title": "Услуга",
+		"href": "service.html",
+		"thumb": "demo/thumbs/index.jpg"
+	}, {
+		"title": "Страница поиска",
+		"href": "search.html",
+		"thumb": "demo/thumbs/index.jpg"
+	}, {
+		"title": "Контакты",
+		"href": "contacts.html",
+		"thumb": "demo/thumbs/index.jpg"
+	}, {
+		"title": "Видео с объектов",
+		"href": "videos.html",
+		"thumb": "demo/thumbs/index.jpg"
+	}, {
+		"title": "Портфолио",
+		"href": "portfolio.html",
+		"thumb": "demo/thumbs/index.jpg"
+	}, {
+		"title": "О копмании",
+		"href": "company.html",
+		"thumb": "demo/thumbs/index.jpg"
+	}, {
+		"title": "Услуги - дизайн",
+		"href": "design.html",
+		"thumb": "demo/thumbs/index.jpg"
+	}, {
+		"title": "Прайс Лист (remove)",
+		"href": "pricelist.html",
+		"thumb": "demo/thumbs/index.jpg"
+	}],
+	"tags": [],
+	"author": ""
+}

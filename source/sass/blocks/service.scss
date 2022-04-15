@@ -1,0 +1,363 @@
+.service {
+	&__caption {
+		margin: 0 0 10px;
+		font-family: $HelveticaNeue, "Arial", sans-serif;
+		line-height: 150%;
+		text-transform: uppercase;
+		text-align: center;
+		padding: 0 20px;
+
+		@include mq($m) {
+			margin-bottom: 20px;
+			font-size: 20px;
+			padding: 0 30px;
+		}
+	}
+}
+
+.service-lead {
+	margin-bottom: 70px;
+
+	@include mq($m) {
+		margin-bottom: 24px;
+	}
+
+	@include mq($l) {
+		margin-bottom: 28px;
+	}
+
+	&__caption {
+		margin: 0 0 20px;
+		color: rgba($black, 0.5);
+		font-family: $HelveticaNeue, "Arial", sans-serif;
+		font-size: 12px;
+		line-height: 150%;
+		text-align: center;
+		padding: 0 30px;
+		text-transform: uppercase;
+	}
+
+	&__text {
+		font-family: $HelveticaNeue, "Arial", sans-serif;
+		line-height: 150%;
+		text-align: center;
+		text-transform: uppercase;
+		max-width: 1055px;
+
+		@include mq($m) {
+			font-size: 20px;
+			max-width: 1055px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+}
+
+.service-info {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-bottom: 75px;
+
+	&__image {
+		width: 100%;
+		max-width: 1056px;
+
+		&::before {
+			padding-bottom: 100%;
+		}
+	}
+
+	&__descr {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		margin-top: -100 / 315 * 100%;
+		z-index: 1;
+		text-transform: uppercase;
+		max-width: 940px;
+
+		@include mq($m) {
+			margin-top: -223 / 708 * 100%;
+		}
+
+		@include mq($l) {
+			margin-top: -333px;
+		}
+	}
+
+	&__title {
+		font-size: clamp(14px, 6vw, 115px);
+		line-height: clamp(14px, 6vw, 115px);
+		padding: 0 20px;
+		font-weight: 400;
+		color: $orange;
+		text-align: center;
+
+		@include mq($m) {
+			margin-bottom: 20 / 375 * 100vw;
+		}
+
+		@include mq($l) {
+
+			margin-bottom: 43px;
+		}
+	}
+
+	&__text {
+		line-height: 200%;
+		font-family: $HelveticaNeue, "Arial", sans-serif;
+		text-align: center;
+		color: #000;
+		margin-bottom: 40px;
+
+		@include mq($m) {
+			font-size: 16px;
+			margin-bottom: 30px;
+		}
+	}
+
+	&__link {
+		font-family: $HelveticaNeue, "Arial", sans-serif;
+		font-size: 14px;
+		line-height: 16px;
+		text-decoration: underline;
+		color: $orange;
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}
+
+.service-prices {
+	margin-bottom: 59px;
+
+	@include mq($m) {
+		margin-bottom: 90px;
+	}
+
+	@include mq($l) {
+		margin-bottom: 163px;
+	}
+
+	&__list {
+		@include mq($l) {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			grid-gap: 176px 110px;
+			justify-content: center;
+			align-items: flex-start;
+		}
+	}
+}
+
+.service-price {
+	@include mq($m) {
+		width: 537 / 708 * 100%;
+	}
+
+	@include mq($l) {
+		width: 100%;
+	}
+
+	&:not(:last-child) {
+		margin-bottom: 60px;
+
+		@include mq($m) {
+			margin-bottom: 140px;
+		}
+
+		@include mq($l) {
+			margin-bottom: 0;
+		}
+	}
+
+	&:nth-of-type(even) {
+		@media screen and (min-width: $m) and (max-width: $l - 1) {
+			margin-left: auto;
+		}
+
+		@include mq($l) {
+			margin-top: 253px;
+		}
+	}
+
+	&__image {
+		height: 324 / 375 * 100vw;
+		margin-bottom: 30px;
+
+		@include mq($m) {
+			height: 450 / 768 * 100vw;
+		}
+
+		@include mq($l) {
+			height: 590 / 1920 * 100vw;
+			margin-bottom: 15px;
+		}
+
+		img {
+			width: auto;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+
+	&__title {
+		margin: 0 0 19px;
+		font-weight: 400;
+		font-size: 32px;
+		line-height: 103.2%;
+		text-align: center;
+		color: $orange;
+
+		@include mq($m) {
+			text-align: left;
+		}
+	}
+
+	&__text {
+		font-family: $HelveticaNeue, "Arial", sans-serif;
+		color: rgba(#000, 0.5);
+		text-align: center;
+		line-height: 150%;
+
+		@include mq($m) {
+			text-align: left;
+		}
+	}
+}
+
+.service-coworkers {
+	position: relative;
+
+	@include mq($m) {
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+
+	&__image {
+		height: 523 / 315 * 100%;
+
+		@include mq($m) {
+			width: 50%;
+			height: 523 / 708 * 100%;
+			flex-shrink: 0;
+		}
+
+		@include mq($l) {
+			position: absolute;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			height: 100%;
+			width: auto;
+			z-index: -1;
+		}
+
+		img {
+			width: auto;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+
+	&__info {
+		@include mq($m) {
+			width: 50%;
+		}
+
+		@include mq($l) {
+			width: 60%;
+			margin-left: auto;
+			margin-bottom: 110px;
+		}
+
+		@include mq($xl) {
+			display: flex;
+			flex-direction: row-reverse;
+			margin-right: auto;
+			width: 1193 / 1820 * 100%;
+		}
+	}
+
+	&__title {
+		max-width: $desktop-width;
+		font-size: 8.53vw;
+		line-height: 103.2%;
+		font-weight: 400;
+		color: $orange;
+		text-align: center;
+		text-transform: uppercase;
+		margin: 0 0 16px;
+
+		@include mq($m) {
+			font-size: 54 / 768 * 100vw;
+			text-align: left;
+		}
+
+		@include mq($l) {
+			font-size: 117px;
+		}
+
+		@include mq($xl) {
+			text-align: right;
+		}
+	}
+
+	&__text {
+		font-family: $HelveticaNeue, "Arial", sans-serif;
+		font-size: 16px;
+		line-height: 200%;
+		text-align: center;
+		text-transform: uppercase;
+		color: #000;
+
+		@media screen and (max-width: $m - 1) {
+			margin-bottom: 64px;
+		}
+
+		@include mq($m) {
+			text-align: left;
+		}
+
+		@include mq($l) {
+			width: 70%;
+		}
+
+		@include mq($xl) {
+			margin-top: 30px;
+			width: 100%;
+		}
+	}
+
+	&__dropdown {
+		width: 100%;
+
+		@include mq($l) {
+			width: 60%;
+			margin-left: auto;
+		}
+
+		@include mq($xl) {
+			width: 912 / 1820 *100%;
+		}
+	}
+}
+
+
+
+@media (min-width: 0px) and (max-width: 767px) {
+	.service-info__title {
+		font-size: 31px;
+		line-height: 36px;
+		text-align: center;
+
+		& span {
+			display: block;
+			margin-left: 0;
+		}
+	}
+
+}

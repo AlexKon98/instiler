@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+
+    <script src="libs/js/pace.min.js"></script>
+    <link rel="stylesheet" href="libs/css/pace-theme-default.min.css">
+
+    <link rel="preload" href="fonts/Icons.otf" as="font" crossorigin="anonymous">
+    <link rel="stylesheet" href="libs/css/aos.css">
+    <link rel="stylesheet" href="libs/css/fancybox.css">
+    <link rel="stylesheet" href="libs/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="libs/css/jquery.modal.min.css">
+    <link rel="stylesheet" href="libs/css/scale.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Instigators | Блог</title>
+</head>
+
+<body>
+    <div class="loader"></div>
+    <header class="header">
+	<div class="header__menu">
+		<div class="header__menu-wrapper container">
+			<form class="header__menu-form header__menu-form--mobile">
+				<label><input placeholder="что ищем?" type="text"></label>
+				<button type="button">
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+						<path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="#F7F3F0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+						<path d="M21.0004 20.9999L16.6504 16.6499" stroke="#F7F3F0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+					</svg>
+				</button>
+			</form>
+			<ul class="header__menu-list">
+				<li class="header__menu-item">
+					<div class="header__menu-item-wrapper js-hover js-hover-menu" data-img-src="img/piltestnew.png" data-imgmasksrc="img/imgMask.png">
+						<a class="header__menu-link js-canvasLink" href="portfolio.html"><span>(01) </span>Портфолио</a>
+						<div class="header__menu-decor js-canvas-parent">
+							<canvas class="canvas canvas-menu js-canvas"></canvas>
+						</div>
+					</div>
+				</li>
+				<li class="header__menu-item">
+					<div class="header__menu-item-wrapper js-hover js-hover-menu" data-img-src="img/piltestnew.png" data-imgmasksrc="img/imgMask.png">
+						<a class="header__menu-link js-canvasLink" href="javascript:void(0)"><span>(02) </span>О студии</a>
+						<div class="header__menu-decor js-canvas-parent">
+							<canvas class="canvas canvas-menu js-canvas"></canvas>
+						</div>
+					</div>
+				</li>
+				<li class="header__menu-item">
+					<div class="header__menu-item-wrapper js-hover js-hover-menu" data-img-src="img/piltestnew.png" data-imgmasksrc="img/imgMask2.png">
+						<a class="header__menu-link js-canvasLink" href="javascript:void(0)"><span>(03) </span>Публикации</a>
+						<div class="header__menu-decor js-canvas-parent">
+							<canvas class="canvas canvas-menu js-canvas"></canvas>
+						</div>
+					</div>
+				</li>
+				<li class="header__menu-item">
+					<div class="header__menu-item-wrapper js-hover js-hover-menu" data-img-src="img/piltestnew.png" data-imgmasksrc="img/imgMask.png">
+						<a class="header__menu-link js-canvasLink" href="javascript:void(0)"><span>(04) </span>Контакты</a>
+						<div class="header__menu-decor js-canvas-parent">
+							<canvas class="canvas canvas-menu js-canvas"></canvas>
+						</div>
+					</div>
+				</li>
+				<li class="header__menu-item">
+					<div class="header__menu-item-wrapper js-hover js-hover-menu" data-img-src="img/piltestnew.png" data-imgmasksrc="img/imgMask.png">
+						<a class="header__menu-link js-canvasLink" href="javascript:void(0)"><span>(05) </span>Видео</a>
+						<div class="header__menu-decor js-canvas-parent">
+							<canvas class="canvas canvas-menu js-canvas"></canvas>
+						</div>
+					</div>
+				</li>
+				<li class="header__menu-item">
+					<div class="header__menu-item-wrapper js-hover js-hover-menu" data-img-src="img/piltestnew.png" data-imgmasksrc="img/imgMask2.png">
+						<a class="header__menu-link js-canvasLink" href="service.html"><span>(06) </span>Услуги</a>
+						<div class="header__menu-decor js-canvas-parent">
+							<canvas class="canvas canvas-menu js-canvas"></canvas>
+						</div>
+					</div>
+				</li>
+			</ul>
+			<ul class="header__social-list-mobile">
+				<li class="header__social-item">
+					<a href="javascript:void(0)">Vk</a>
+				</li>
+				<li class="header__social-item">
+					<a href="javascript:void(0)">Facebook</a>
+				</li>
+				<li class="header__social-item">
+					<a href="javascript:void(0)">Houzz</a>
+				</li>
+			</ul>
+			<div class="header__menu-contacts">
+				<a class="header__menu-contacts-link header__menu-contacts-link--mail" href="mailto:info@instilier.ru">info@instilier.ru</a>
+				<div>
+					<a class="header__menu-contacts-link header__menu-contacts-link--tel" href="tel:+74993468963">+7 - 499 - 346
+						- 8963</a>
+					<p class="header__menu-contacts-schedule">пн-пт: 8:00 - 19:00</p>
+				</div>
+				<p class="header__menu-contacts-adres"><span>Москва,</span> Литовский б-р 1-221</p>
+			</div>
+			<div class="header__menu-footer">
+				<p>ООО "Студия Инстильер" 2013-2021 (с)</p>
+				<a href="javascript:void(0)">Сделано в студии Магвай</a>
+			</div>
+		</div>
+	</div>
+	<div class="header__wrapper container">
+		<div class="header__content">
+			<a class="header__logo-link" href="javascript:void(0)">
+				<div class="header__logos">
+					<picture class="header__logo-default">
+						<source srcset="img/logo-mobile.png" media="(min-width: 0px) and (max-width: 767px)">
+						<source srcset="img/logo-tablet.png" media="(min-width: 767px) and (max-width: 1279px)">
+						<img src="img/logo-desktop.png" alt="logo">
+					</picture>
+					<div class="header__logo-fixed">
+						<img src="img/fixedLogo.svg" alt="img">
+					</div>
+				</div>
+			</a>
+			<p class="header__content-text">Мы являемся студией дизайна модных интерьеров</p>
+			<div class="header__menu-static">
+				<a class="is-text header__menu-btn js-headerMenu" data-click="0">
+					<div class="header__menu-inner-wrapper">
+						<span class="icon menu-icon"></span>
+					</div>
+					<p class="header__menu-btn-text header__menu-btn-text--menu">Меню</p>
+					<p class="header__menu-btn-text header__menu-btn-text--close">Закрыть</p>
+				</a>
+			</div>
+			<div class="header__bar">
+				<ul class="header__social-list">
+					<li class="header__social-item">
+						<a href="javascript:void(0)">Vk</a>
+					</li>
+					<li class="header__social-item">
+						<a href="javascript:void(0)">Facebook</a>
+					</li>
+					<li class="header__social-item">
+						<a href="javascript:void(0)">Houzz</a>
+					</li>
+				</ul>
+				<form>
+					<div>
+						<input type="text" placeholder="что ищем?">
+						<button class="header__bar-img-view" type="button">
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+								<path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="#B55A2B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+								<path d="M21.0004 20.9999L16.6504 16.6499" stroke="#B55A2B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+							</svg>
+						</button>
+						<a class="js-search-open" href="#">
+							<svg class="search-img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+								<path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="#B55A2B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+								<path d="M21.0004 20.9999L16.6504 16.6499" stroke="#B55A2B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+							</svg>
+							<svg class="close-img header__bar-img-view" xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 33 33" fill="none">
+								<line x1="7.77926" y1="24.042" x2="24.0427" y2="7.7785" stroke="#B55A2B"></line>
+								<line x1="24.041" y1="24.7491" x2="7.77752" y2="8.48561" stroke="#B55A2B"></line>
+							</svg>
+						</a>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</header>
+    <main>
+        <div class="font-init"></div>
+        <section class="post">
+            <div class="post__wrapper container">
+                <p class="header__content-text header__content-text--mobile">Мы являемся студией дизайна модных интерьеров</p>
+                <ul data-aos="fade-up" data-aos-once="false" class="breadcrumbs">
+                    <li class="breadcrumbs__item"><a href="index.html">Главная</a></li>
+                    <li class="breadcrumbs__item"><a href="blog.html">Публикации</a></li>
+                    <li class="breadcrumbs__item"><a>Однокомнатная квартира</a></li>
+                </ul>
+                <div class="post__item post">
+                    <div class="post__item">
+                        <a data-aos="fade-up" data-aos-once="false" class="post__image image" href="javascript:void(0)">
+                            <img src="img/post-item.jpg" width="1820" height="897" alt="Описание изображения">
+                        </a>
+                        <div class="post__body">
+                            <p data-aos="flip-up" data-aos-once="false" class="post__caption">Тема:</p>
+                            <h1 data-aos="fade-up" data-aos-once="false" class="page-title page-title--post">Однокомнатная квартира
+                            </h1>
+                            <div data-aos="fade-up" data-aos-once="false" class="post__text text">
+                                <p>Дизайн-проект этой квартиры заказал молодой («студенческого» возраста) человек. Высокий, фактурный юноша приехал на встречу на мощном спортивном автомобиле насыщенного морковного окраса, а завершался стереотипический образ
+                                    этого заказчика курткой и обувью ярких цветов. Эстетика будущего интерьера, казалось бы, была уже предрешена: предпочтения нашего клиента, на первый беглый взгляд, обещали свестись к кричащей бунтарской стилистике квартиры,
+                                    изобилующей контрастными элементами насыщенных тонов, и предъявляющей бескомпромиссный манифест окружающей действительности и — главным образом — родителям. Правдой из этого оказалось только то, что, на наше счастье,
+                                    проект ожидался действительно оригинальный, требующий выработки подлинно творческих идей для создания квартиры-студии молодого холостяка. Остальные же стереотипы рушились один за другим, падая, как подкошенные кости
+                                    домино.
+                                </p>
+                                <p>Полем для творчества стали без малого 60 кв.м. в доме на Мосфильмовской улице в Москве. Заказчик оказался неожиданно самостоятельным для своих лет, серьёзным и зрелым человеком, ориентирующимся в отдельных нюансах строительства
+                                    и капитального ремонта, стоимости услуг и прочих деталях, а также имеющим уже в следствие наличия у него собственного бизнеса опыт управления проектами. Несмотря на присутствие ряда предварительно сформировавшихся пожеланий
+                                    по стилистическим и декоративным решениям (а у кого их нет?), он оказался открыт к вдумчивому и беспристрастному изучению наших предложений, даже когда они сильно отличались от его исходных установок. Таким образом,
+                                    работа строилась в постоянном диалоге специалистов студии дизайна интерьеров и заказчика, заключавшемся в сопоставлении и взвешивании аргументов обеих сторон с последующим корректированием замысла. Творческий поиск
+                                    идеи вышел долгим: ни один этап разработки проекта не обходился без проверки предлагаемых решений «на прочность», изменения вносились массово и регулярно, иногда приходилось возвращаться и к исходному варианту. Никто
+                                    не сдавал позиции без боя.</p>
+                                <p>Дизайн-проект этой квартиры заказал молодой («студенческого» возраста) человек. Высокий, фактурный юноша приехал на встречу на мощном спортивном автомобиле насыщенного морковного окраса, а завершался стереотипический образ
+                                    этого заказчика курткой и обувью ярких цветов. Эстетика будущего интерьера, казалось бы, была уже предрешена: предпочтения нашего клиента, на первый беглый взгляд, обещали свестись к кричащей бунтарской стилистике квартиры,
+                                    изобилующей контрастными элементами насыщенных тонов, и предъявляющей бескомпромиссный манифест окружающей действительности и — главным образом — родителям. Правдой из этого оказалось только то, что, на наше счастье,
+                                    проект ожидался действительно оригинальный, требующий выработки подлинно творческих идей для создания квартиры-студии молодого холостяка. Остальные же стереотипы рушились один за другим, падая, как подкошенные кости
+                                    домино.
+                                </p>
+                                <ul>
+                                    <li>Дизайн-проект этой квартиры заказал молодой («студенческого» возраста) человек. Высокий, фактурный юноша приехал на встречу на мощном спортивном </li>
+                                    <li>Дизайн-проект этой квартиры заказал молодой («студенческого» возраста) человек. Высокий, фактурный юноша приехал на встречу на мощном спортивном </li>
+                                    <li>Дизайн-проект этой квартиры заказал молодой («студенческого» возраста) человек. Высокий, фактурный юноша приехал на встречу на мощном спортивном </li>
+                                    <li>Дизайн-проект этой квартиры заказал молодой («студенческого» возраста) человек. Высокий, фактурный юноша приехал на встречу на мощном спортивном </li>
+                                    <li>Дизайн-проект этой квартиры заказал молодой («студенческого» возраста) человек. Высокий, фактурный юноша приехал на встречу на мощном спортивном </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="feedback">
+            <div class="feedback__wrapper container">
+                <div class="main__item about__title-decor js-hover js-hover-main js-show-scroll" data-img-src="img/feedback.png" data-imgmasksrc="img/imgMask.png">
+                    <div class="about__canvas-wrapper js-show-scroll-canvas js-show-scroll-scale">
+                        <canvas class="canvas canvas-main js-canvas"></canvas>
+                    </div>
+                </div>
+                <div class="main__item about__title-decor js-hover js-hover-main js-show-scroll" data-img-src="img/about.png" data-imgmasksrc="img/imgMask.png">
+                    <div class="about__canvas-wrapper js-show-scroll-canvas js-show-scroll-scale">
+                        <canvas class="canvas canvas-main js-canvas"></canvas>
+                    </div>
+                </div>
+                <span class="about__num">(6)</span>
+                <h2 data-aos="fade-up" data-aos-once="false" class="feedback__title">
+                    <span>Хотите начать</span>
+                    <span>работать</span>
+                    <span> с нами ?</span>
+                </h2>
+                <h3 data-aos-once="false" data-aos="zoom-in">Не стесняйтесь обращаться к нам, мы ответим на все ваши вопросы
+                </h3>
+                <div class="feedback__contacts">
+                    <a data-aos="fade-right" data-aos-once="false" class="feedback__email" href="mailto:info@instilier.ru">info@instilier.ru</a>
+                    <p data-aos="fade-left" data-aos-once="false" class="feedback__loc">Москва, Литовский б-р 1-221</p>
+                    <div class="feedback__tel">
+                        <a href="tel:+74993468963">+7 - 499 -346 - 8963</a>
+                        <p>ПН-ПТ: 8:00 - 19:00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="isBtnDye">
+                <div class="isBtnDye__link">
+                    <a class="js-hover-anim js-show-scroll" href="javascript:void(5)">
+                        <div style="background: url('img/feedback-active.svg'), #b55a2b;">
+                            <canvas data-src="img/feedback-static.svg" style="background: url('img/feedback-static.svg'), #FAF9F7;" class="milkload" width="300" height="300"></canvas>
+                        </div>
+                    </a>
+                </div>
+                <a class="isBtnDye__link-mobile" style="background-image: url('img/feedback-active.svg');" href="javascript:void(0)"></a>
+            </div>
+        </section>
+        <section data-aos="fade-up" data-aos-once="false" class="awards">
+            <div class="awards__wrapper container">
+                <h2 class="awards__title">НАШИ НАГРАДЫ</h2>
+                <ul class="awards__list">
+                    <li data-title="первый" class="awards__item">
+                        <a href="javascript:void(0)">
+                            <img src="img/awards0.png" alt="">
+                        </a>
+                    </li>
+                    <li data-title="второй" class="awards__item">
+                        <a href="javascript:void(0)">
+                            <img src="img/awards1.png" alt="img">
+                        </a>
+                    </li>
+                    <li data-title="третий" class="awards__item">
+                        <a href="javascript:void(0)">
+                            <img src="img/awards2.png" alt="img">
+                        </a>
+                    </li>
+                    <li data-title="четвёртый" class="awards__item">
+                        <a href="javascript:void(0)">
+                            <img src="img/awards3.png" alt="img">
+                        </a>
+                    </li>
+                    <li data-title="пятый" class="awards__item">
+                        <a href="javascript:void(0)">
+                            <img src="img/awards4.png" alt="img">
+                        </a>
+                    </li>
+                    <li data-title="шестой" class="awards__item">
+                        <a href="javascript:void(0)">
+                            <img src="img/awards5.png" alt="img">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <div class="search__link">
+            <a href="javascript:void(0)">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+					<path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="#FCEEE9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+					<path d="M21.0004 21L16.6504 16.65" stroke="#FCEEE9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+				</svg>
+                <span>поиск</span>
+            </a>
+        </div>
+        <div class="fixed__bar">
+            <div class="fixed__bar-social">
+                <div class="fixed__bar-social-list-wrapper">
+                    <ul class="fixed__bar-social-list ">
+                        <li>
+                            <a href="javascript:void(0)">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M16.1241 13.7865C15.8995 13.6748 14.7985 13.1363 14.5935 13.0613C14.3885 12.987 14.2393 12.9503 14.0894 13.1738C13.9401 13.3958 13.5113 13.8983 13.381 14.0468C13.2498 14.196 13.1195 14.214 12.8956 14.103C12.6718 13.9905 11.9499 13.7558 11.0945 12.9968C10.4291 12.4058 9.97918 11.676 9.8488 11.4525C9.71843 11.2298 9.83448 11.109 9.94677 10.998C10.0478 10.8983 10.1706 10.7378 10.2829 10.608C10.3952 10.4775 10.4321 10.3845 10.5067 10.2353C10.5821 10.0868 10.5444 9.95702 10.4879 9.84527C10.4321 9.73352 9.98445 8.63627 9.79756 8.19002C9.61594 7.75577 9.4313 7.81502 9.29414 7.80752C9.16302 7.80152 9.0138 7.80002 8.86459 7.80002C8.71537 7.80002 8.47271 7.85552 8.26773 8.07902C8.06199 8.30177 7.48397 8.84102 7.48397 9.93827C7.48397 11.0348 8.28582 12.0945 8.3981 12.2438C8.51039 12.3923 9.97691 14.6438 12.2234 15.609C12.7585 15.8385 13.1752 15.9758 13.5 16.0778C14.0366 16.248 14.5249 16.224 14.9108 16.1663C15.3404 16.1025 16.2356 15.627 16.4225 15.1065C16.6087 14.586 16.6087 14.1398 16.5529 14.0468C16.4971 13.9538 16.3479 13.8983 16.1234 13.7865H16.1241ZM12.038 19.3388H12.035C10.7007 19.339 9.39089 18.982 8.24286 18.3053L7.97156 18.1448L5.15155 18.8813L5.90441 16.1453L5.72731 15.8648C4.98134 14.683 4.58657 13.3153 4.58861 11.9198C4.59012 7.83227 7.93162 4.50678 12.041 4.50678C14.0306 4.50678 15.901 5.27928 17.3073 6.68027C18.0009 7.36771 18.5506 8.1852 18.9247 9.08544C19.2988 9.98569 19.4898 10.9508 19.4867 11.925C19.4852 16.0125 16.1437 19.3388 12.038 19.3388ZM18.3774 5.61603C17.5471 4.78422 16.5591 4.12468 15.4708 3.67563C14.3825 3.22658 13.2154 2.99694 12.0373 3.00003C7.09813 3.00003 3.07687 7.00127 3.07536 11.919C3.07461 13.491 3.48683 15.0255 4.27134 16.3778L3 21L7.75075 19.7595C9.06495 20.4721 10.5377 20.8455 12.0343 20.8455H12.038C16.9772 20.8455 20.9984 16.8443 21 11.9258C21.0036 10.7537 20.7737 9.59259 20.3235 8.50955C19.8734 7.4265 19.2119 6.44303 18.3774 5.61603Z" fill="#B55A2B"></path>
+								</svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M18.92 5.09205L4.7471 10.7942C3.77986 11.1995 3.78545 11.7624 4.56964 12.0135L8.2084 13.1978L16.6274 7.65579C17.0255 7.40309 17.3892 7.53903 17.0903 7.81592L10.2692 14.2386H10.2676L10.2692 14.2394L10.0182 18.1526C10.3859 18.1526 10.5482 17.9766 10.7544 17.769L12.5218 15.9758L16.1982 18.809C16.876 19.1984 17.3628 18.9983 17.5315 18.1543L19.9448 6.28802C20.1918 5.25468 19.5667 4.78681 18.92 5.09205Z" fill="#B55A2B"></path>
+								</svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="js-application-link" href="./ajax/application.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
+									<path d="M3.33333 2.6665H14C14.7333 2.6665 15.3333 3.2665 15.3333 3.99984V11.9998C15.3333 12.7332 14.7333 13.3332 14 13.3332H3.33333C2.6 13.3332 2 12.7332 2 11.9998V3.99984C2 3.2665 2.6 2.6665 3.33333 2.6665Z" stroke="#B55A2B" stroke-linecap="round" stroke-linejoin="round"></path>
+									<path d="M15.3333 4L8.66667 8.66667L2 4" stroke="#B55A2B" stroke-linecap="round" stroke-linejoin="round"></path>
+								</svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+									<path d="M15.223 11.5535V13.7201C15.2238 13.9213 15.1826 14.1204 15.1021 14.3047C15.0215 14.4889 14.9033 14.6544 14.7551 14.7904C14.6069 14.9263 14.4319 15.0299 14.2413 15.0943C14.0508 15.1587 13.8489 15.1827 13.6486 15.1646C11.4262 14.9231 9.29141 14.1637 7.41579 12.9473C5.67078 11.8385 4.19131 10.359 3.08246 8.61401C1.86189 6.72988 1.1023 4.58473 0.865237 2.35235C0.847189 2.15263 0.870925 1.95134 0.934932 1.7613C0.998939 1.57125 1.10182 1.39662 1.23701 1.24852C1.37221 1.10041 1.53676 0.982081 1.7202 0.901057C1.90363 0.820033 2.10193 0.778091 2.30246 0.777902H4.46913C4.81963 0.774452 5.15942 0.89857 5.42518 1.12712C5.69093 1.35567 5.86452 1.67306 5.91357 2.02012C6.00502 2.71351 6.17462 3.39432 6.41913 4.04957C6.5163 4.30807 6.53733 4.58901 6.47973 4.85909C6.42213 5.12918 6.28831 5.37709 6.09413 5.57346L5.17691 6.49068C6.20503 8.2988 7.70212 9.79589 9.51024 10.824L10.4275 9.90679C10.6238 9.71261 10.8717 9.57879 11.1418 9.52119C11.4119 9.46359 11.6929 9.48462 11.9514 9.58179C12.6066 9.8263 13.2874 9.9959 13.9808 10.0873C14.3316 10.1368 14.652 10.3136 14.8811 10.5839C15.1101 10.8542 15.2318 11.1993 15.223 11.5535Z" stroke="#B55A2B" stroke-linecap="round" stroke-linejoin="round"></path>
+								</svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <a class="fixed__bar-social-btn js-social-open" href="javascript:void(0)">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="34" height="42" viewBox="0 0 48 44" fill="none">
+						<mask id="path-1-inside-1_1298:1130" fill="white">
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M45.7229 27.2798C46.9978 24.7405 47.7155 21.8732 47.7155 18.8382C47.7155 8.43417 39.2814 0 28.8773 0C18.4732 0 10.0391 8.43417 10.0391 18.8382C10.0391 29.2423 18.4732 37.6765 28.8773 37.6765C32.4095 37.6765 35.7147 36.7043 38.5399 35.013L47.1072 38.6611L45.7229 27.2798Z"></path>
+						</mask>
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M45.7229 27.2798C46.9978 24.7405 47.7155 21.8732 47.7155 18.8382C47.7155 8.43417 39.2814 0 28.8773 0C18.4732 0 10.0391 8.43417 10.0391 18.8382C10.0391 29.2423 18.4732 37.6765 28.8773 37.6765C32.4095 37.6765 35.7147 36.7043 38.5399 35.013L47.1072 38.6611L45.7229 27.2798Z" fill="#F7F3F0"></path>
+						<path d="M45.7229 27.2798L44.8292 26.8311L44.6938 27.1009L44.7302 27.4005L45.7229 27.2798ZM38.5399 35.013L38.9317 34.0929L38.4631 33.8934L38.0262 34.155L38.5399 35.013ZM47.1072 38.6611L46.7154 39.5811L48.309 40.2597L48.0999 38.5403L47.1072 38.6611ZM46.7155 18.8382C46.7155 21.7139 46.0358 24.4279 44.8292 26.8311L46.6166 27.7285C47.9598 25.0532 48.7155 22.0325 48.7155 18.8382H46.7155ZM28.8773 1C38.7291 1 46.7155 8.98645 46.7155 18.8382H48.7155C48.7155 7.88188 39.8337 -1 28.8773 -1V1ZM11.0391 18.8382C11.0391 8.98645 19.0255 1 28.8773 1V-1C17.9209 -1 9.03906 7.88188 9.03906 18.8382H11.0391ZM28.8773 36.6765C19.0255 36.6765 11.0391 28.69 11.0391 18.8382H9.03906C9.03906 29.7946 17.9209 38.6765 28.8773 38.6765V36.6765ZM38.0262 34.155C35.352 35.756 32.2236 36.6765 28.8773 36.6765V38.6765C32.5954 38.6765 36.0775 37.6527 39.0535 35.871L38.0262 34.155ZM47.499 37.741L38.9317 34.0929L38.1481 35.933L46.7154 39.5811L47.499 37.741ZM44.7302 27.4005L46.1145 38.7818L48.0999 38.5403L46.7156 27.159L44.7302 27.4005Z" fill="#B55A2B" mask="url(#path-1-inside-1_1298:1130)"></path>
+						<mask id="path-3-outside-2_1298:1130" maskUnits="userSpaceOnUse" x="-0.515625" y="13.8232" width="29" height="30" fill="black">
+							<rect fill="white" x="-0.515625" y="13.8232" width="29" height="30"></rect>
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M2.40135 34.0005C1.50476 32.2153 1.00003 30.1993 1.00003 28.0654C1.00003 20.752 6.92875 14.8232 14.2422 14.8232C21.5557 14.8232 27.4844 20.752 27.4844 28.0654C27.4844 35.3789 21.5557 41.3076 14.2422 41.3076C11.7594 41.3076 9.43615 40.6243 7.4503 39.4355L1.4284 41.9997L2.40135 34.0005Z"></path>
+						</mask>
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M2.40135 34.0005C1.50476 32.2153 1.00003 30.1993 1.00003 28.0654C1.00003 20.752 6.92875 14.8232 14.2422 14.8232C21.5557 14.8232 27.4844 20.752 27.4844 28.0654C27.4844 35.3789 21.5557 41.3076 14.2422 41.3076C11.7594 41.3076 9.43615 40.6243 7.4503 39.4355L1.4284 41.9997L2.40135 34.0005Z" fill="#F7F3F0"></path>
+						<path d="M2.40135 34.0005L3.29498 33.5517L3.43049 33.8216L3.39403 34.1213L2.40135 34.0005ZM7.4503 39.4355L7.05853 38.5154L7.52703 38.3159L7.96394 38.5775L7.4503 39.4355ZM1.4284 41.9997L1.82018 42.9198L0.226585 43.5984L0.435715 41.879L1.4284 41.9997ZM2.00003 28.0654C2.00003 30.04 2.46675 31.9026 3.29498 33.5517L1.50772 34.4493C0.542772 32.528 3.05176e-05 30.3586 3.05176e-05 28.0654H2.00003ZM14.2422 15.8232C7.48104 15.8232 2.00003 21.3042 2.00003 28.0654H3.05176e-05C3.05176e-05 20.1997 6.37647 13.8232 14.2422 13.8232V15.8232ZM26.4844 28.0654C26.4844 21.3042 21.0034 15.8232 14.2422 15.8232V13.8232C22.1079 13.8232 28.4844 20.1997 28.4844 28.0654H26.4844ZM14.2422 40.3076C21.0034 40.3076 26.4844 34.8266 26.4844 28.0654H28.4844C28.4844 35.9311 22.1079 42.3076 14.2422 42.3076V40.3076ZM7.96394 38.5775C9.79889 39.676 11.9453 40.3076 14.2422 40.3076V42.3076C11.5735 42.3076 9.07341 41.5726 6.93667 40.2935L7.96394 38.5775ZM1.03662 41.0797L7.05853 38.5154L7.84208 40.3556L1.82018 42.9198L1.03662 41.0797ZM3.39403 34.1213L2.42108 42.1205L0.435715 41.879L1.40866 33.8798L3.39403 34.1213Z" fill="#B55A2B" mask="url(#path-3-outside-2_1298:1130)"></path>
+					</svg>
+                </a>
+            </div>
+            <div class="upArrow">
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19" fill="none">
+						<path d="M1 1L18 1M18 1L18 18M18 1L1 18" stroke="#B55A2B"></path>
+					</svg>
+                </a>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__decor"></div>
+        <div class="footer__wrapper container">
+            <div class="footer__content">
+                <p class="footer__studio">ООО "Студия Инстильер" 2013-2021 (с)</p>
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a href="javascript:void(0)">VK</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="javascript:void(0)">Facebook</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="javascript:void(0)">Houzz</a>
+                    </li>
+                </ul>
+                <a class="footer__copy" href="javascript:void(0)">СДЕЛАНО В СТУДИИ МАГВАЙ</a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="libs/js/jquery-3.6.0.min.js"></script>
+    <script src="libs/js/jquery.inview.js"></script>
+    <script src="libs/js/aos.js"></script>
+    <script src="libs/js/anime.min.js"></script>
+    <script src="libs/js/fancybox.umd.js"></script>
+    <script src="libs/js/swiper-bundle.min.js"></script>
+    <script src="libs/js/gsap.min.js"></script>
+    <script src="libs/js/jquery.modal.min.js"></script>
+    <script src="libs/js/popper.min.js"></script>
+    <script src="libs/js/tippy-bundle.umd.js"></script>
+    <script src="libs/js/jquery.inputmask.min.js"></script>
+    <script src="libs/js/inputmask.min.js"></script>
+    <script src="nav-del/scripts/demo-menu.js" data-demo-data="nav-del/demo/data.json" async="" defer=""></script>
+    <script type="module" src="js/main.js"></script>
+</body>
+
+</html>

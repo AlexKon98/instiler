@@ -1,0 +1,109 @@
+.revelations {
+    margin-top: 227px;
+}
+
+.revelations__title {
+    font-family: $Lovelace;
+    font-size: clamp(14px, 6vw, 115px);
+    line-height: clamp(14px, 6vw, 115px);
+    font-weight: 400;
+    text-transform: uppercase;
+    color: $orange;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-top: 92px;
+    mix-blend-mode: darken;
+    z-index: 4;
+    max-width: 1365px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    pointer-events: none;
+    text-align: right;
+    width: max-content;
+    & .about__num {
+        font-family: $Lovelace;
+        font-size: 32px;
+        line-height: 45px;
+        text-align: center;
+        color: #9F9592;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+.revelations__content {
+    display: flex;
+}
+
+.revelations__content-wrap {
+    width: 50%;
+    &:nth-child(1) {
+        position: relative;
+        & .about__canvas-wrapper canvas {
+            width: 1300px;
+            height: 800px;
+        }
+        & .about__title-decor {
+            top: 0;
+        }
+    }
+}
+
+.revelations__content-text {
+    font-family: $HelveticaNeue;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #000000;
+    margin: 0;
+    margin-top: 54px;
+    position: relative;
+    z-index: 3;
+}
+
+@media (min-width: 0px) and (max-width: 1199px) {
+    .revelations {
+        margin-top: 150px;
+    }
+    .revelations__content {
+        flex-direction: column;
+    }
+    .revelations__content-wrap {
+        &:nth-child(2) {
+            width: 100%;
+        }
+    }
+    .revelations__title {
+        font-size: 92px;
+        line-height: 95px;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+    .revelations__title {
+        font-size: 48px;
+        line-height: 50px;
+    }
+    .revelations__content-text {
+        font-size: 14px;
+        line-height: 21px;
+        margin-top: 222px;
+    }
+    .revelations__content-wrap:nth-child(1) .about__canvas-wrapper canvas {
+        width: 800px;
+        height: 600px;
+    }
+    .revelations__content-wrap:nth-child(1) {
+        width: 80%;
+    }
+    .revelations__content-wrap:nth-child(1) .about__title-decor {
+        top: -120px;
+    }
+}

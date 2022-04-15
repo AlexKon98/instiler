@@ -1,0 +1,187 @@
+.page-title {
+	font-size: clamp(14px, 6vw, 115px);
+	line-height: clamp(14px, 6vw, 115px);
+	text-transform: uppercase;
+	color: $orange;
+	font-weight: 400;
+	margin: 0 auto 31 / 375 * 100vw;
+	max-width: $desktop-width;
+
+	@include mq($m) {
+		margin-bottom: 20 / 375 * 100vw;
+	}
+
+	@include mq($l) {
+		margin-bottom: 50px;
+	}
+
+
+
+	&--portfolio {
+		margin-bottom: 60 / 375 * 100vw;
+
+		@include mq($m) {
+			width: 500 / 708 * 100%;
+			text-align: center;
+			margin-bottom: 112 / 768 * 100vw;
+		}
+
+		@include mq($l) {
+			width: 66%;
+			margin-bottom: 221px;
+			max-width: 1300px;
+		}
+
+		@include mq(1199px) {
+			text-align: left;
+			max-width: max-content;
+		}
+
+		span {
+			@media screen and (max-width: $m - 1) {
+				margin-left: 50px;
+			}
+
+			@include mq($m) {
+				display: block;
+			}
+
+			@include mq(1199px) {
+				margin-left: 200px;
+			}
+		}
+	}
+
+	&--blog {
+		margin-bottom: 60 / 375 * 100vw;
+
+		@include mq($m) {
+			width: 500 / 708 * 100%;
+			text-align: center;
+			margin-bottom: 112 / 768 * 100vw;
+		}
+
+		@include mq($l) {
+			width: 66%;
+			margin-bottom: 221px;
+			max-width: 1300px;
+		}
+
+		@include mq(1199px) {
+			text-align: left;
+			max-width: max-content;
+		}
+
+		span {
+			@media screen and (max-width: $m - 1) {
+				margin-left: 50px;
+			}
+
+			@include mq($m) {
+				display: block;
+			}
+
+			@include mq(1199px) {
+				margin-left: 146px;
+			}
+		}
+	}
+
+	&--post {
+		text-align: center;
+		margin-bottom: 52px;
+
+		@include mq($m) {
+			margin-bottom: 60px;
+		}
+
+		@include mq($l) {
+			margin-bottom: 50px;
+		}
+	}
+
+	&--service {
+		text-align: center;
+		margin-bottom: 50 / 375 * 100vw;
+
+		@include mq($m) {
+			margin-bottom: 81 / 768 * 100%;
+		}
+
+		@include mq($l) {
+			margin-bottom: 50px;
+		}
+	}
+
+	&--pricelist {
+		font-size: 24 / 375 * 100vw;
+		line-height: 133%;
+		margin-bottom: 49px;
+		text-align: center;
+
+		@include mq($m) {
+			font-size: 24 / 768 * 100vw;
+			line-height: 191%;
+			margin-bottom: 16px;
+		}
+
+		@include mq($l) {
+			font-size: 46px;
+			line-height: 1;
+			margin-bottom: 70px;
+		}
+
+		span {
+			display: block;
+			color: $black;
+		}
+	}
+
+	&--search {
+		font-size: 32 / 375 * 100vw;
+		text-align: center;
+		margin-bottom: 40px;
+
+		@include mq($m) {
+			font-size: 54 / 768 * 100vw;
+			margin-bottom: 50px;
+		}
+
+		@include mq($l) {
+			font-size: 70px;
+			line-height: 99.2%;
+			margin-bottom: 20px;
+		}
+	}
+}
+
+
+@media (min-width: 0px) and (max-width: 767px) {
+	.page-title {
+		font-size: 31px;
+		line-height: 36px;
+		text-align: center;
+
+		& span {
+			display: block;
+			margin-left: 0;
+		}
+	}
+
+	&.page-title--blog {
+		font-size: 48px;
+		line-height: 50px;
+	}
+
+}
+
+.page-title--pricelist {
+	margin-bottom: 0;
+}
+
+
+@media (min-width: 0px) and (max-width:1440px) {
+	.page-title--pricelist {
+		margin-bottom: 20px;
+	}
+}

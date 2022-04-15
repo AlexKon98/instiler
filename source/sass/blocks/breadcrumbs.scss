@@ -1,0 +1,47 @@
+.breadcrumbs {
+	@include reset-list();
+
+	margin-top: 33px;
+	margin-bottom: 40px;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	font-size: 14px;
+	line-height: 1;
+	text-align: center;
+	text-transform: uppercase;
+
+	@include mq($m) {
+		margin-top: 60px;
+		margin-bottom: 20px;
+		font-size: 16px;
+	}
+
+	@include mq($l) {
+		font-size: 14px;
+		margin-bottom: 60px;
+	}
+
+	&__item {
+		position: relative;
+
+		&:not(:last-child)::after {
+			content: "/";
+			margin: 0 5px;
+		}
+
+		a {
+			text-decoration: none;
+			color: rgba(181, 90, 43, 0.5);
+			transition: color $time $t-effect;
+
+			&:hover {
+				color: rgba(181, 90, 43, 1);
+			}
+
+			&:not([href]) {
+				color: $orange;
+			}
+		}
+	}
+}

@@ -1,0 +1,19 @@
+@mixin mq($canvas, $canvas2: null) {
+	@if $canvas {
+		@media only screen and (min-width: $canvas) {
+			@content;
+		}
+	}
+}
+
+@mixin reset-list() {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+@mixin reset-btn($pad: 0) {
+	background-color: transparent;
+	padding: $pad;
+	border: 0;
+}

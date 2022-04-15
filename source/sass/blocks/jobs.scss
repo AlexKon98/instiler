@@ -1,0 +1,542 @@
+.jobs {
+    margin-top: 490px;
+    & .main__project-link-decor {
+        pointer-events: none;
+        &--1 {
+            width: 650px;
+            height: 425px;
+            & canvas {
+                width: 650px;
+            }
+            & .main__project-link {
+                top: 25%;
+                bottom: unset;
+            }
+        }
+        &--2 {
+            width: 650px;
+            height: 425px;
+            & canvas {
+                width: 650px;
+            }
+            & .main__project-link {
+                bottom: 0;
+            }
+        }
+        &--3 {
+            width: 650px;
+            height: 425px;
+            & canvas {
+                width: 650px;
+            }
+            & .main__project-link {
+                bottom: -5%;
+            }
+        }
+        &--4 {
+            width: 650px;
+            height: 425px;
+            & canvas {
+                width: 650px;
+            }
+            & .main__project-link {
+                bottom: 0px;
+            }
+        }
+        &--5 {
+            width: 650px;
+            height: 425px;
+            & canvas {
+                width: 650px;
+            }
+            & .main__project-link {
+                bottom: 50px;
+            }
+        }
+        &--6 {
+            width: 650px;
+            height: 425px;
+            & canvas {
+                width: 650px;
+            }
+            & .main__project-link {
+                bottom: 30%;
+            }
+        }
+    }
+    .main__list {
+        margin-top: -1060px;
+        padding: 800px 0;
+        pointer-events: none;
+        & .main__item {
+            pointer-events: all;
+            &--1 {
+                top: 194px;
+                left: unset;
+                right: 24px;
+            }
+            &--2 {
+                top: 462px;
+                right: -90px;
+            }
+            &--3 {
+                bottom: 350px;
+                right: 20px;
+            }
+            &--4 {
+                bottom: 200px;
+                left: 0px;
+            }
+            &--5 {
+                top: 542px;
+                left: -90px;
+            }
+            &--6 {
+                top: 70px;
+                left: 25px;
+            }
+            & .main__project-link p:nth-child(1) {
+                border-bottom: 1px solid #B55A2B;
+            }
+            & .main__project-link p:nth-child(2) {
+                font-family: $HelveticaNeue;
+                font-size: 20px;
+                line-height: 30px;
+                text-transform: uppercase;
+                color: #101010;
+                margin: 0;
+                max-width: 400px;
+                text-align: left;
+                margin-top: 15px;
+            }
+            & .main__project-link {
+                border: none;
+            }
+        }
+    }
+}
+
+.jobs__title {
+    font-family: $Lovelace;
+    font-size: clamp(14px, 6vw, 115px);
+    line-height: clamp(14px, 6vw, 115px);
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #B55A2B;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-top: 92px;
+    mix-blend-mode: darken;
+    z-index: 2;
+    max-width: 637px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    pointer-events: none;
+    & .about__num {
+        font-family: $Lovelace;
+        font-size: 32px;
+        line-height: 45px;
+        text-align: center;
+        color: #9F9592;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+.jobs__subtitle {
+    font-family: $HelveticaNeue;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $black;
+    margin: 0;
+}
+
+// .jobs__title-wrapper {
+// 	position: absolute;
+// 	top: 50%;
+// 	left: 50%;
+// 	transform: translate(-50%, -50%);
+// 	text-align: center;
+// 	z-index: 2;
+// }
+.jobs__more {
+    width: 190px;
+    height: 190px;
+    display: inline-block;
+    border-radius: 50%;
+    background-image: url('../img/portf-static.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    margin-top: 60px;
+    &:active {
+        background-image: url('../img/portf-active.svg');
+    }
+}
+
+.jobs__more--mobile {
+    display: none;
+}
+
+@media (min-width:1119px) and (max-width: 1600px) {
+    .jobs .main__list .main__item--1 {
+        right: -140px;
+    }
+    .jobs .main__list .main__item--2 {
+        top: 550px;
+        right: -184px;
+    }
+    .jobs .main__list .main__item--3 {
+        bottom: 230px;
+        right: -80px;
+    }
+    .jobs .main__list .main__item--4 {
+        left: -80px;
+    }
+    .jobs .main__list .main__item--5 {
+        left: -130px;
+    }
+    .jobs .main__list .main__item--6 {
+        top: 90px;
+        left: -100px;
+    }
+}
+
+@media (min-width:0px) and (max-width: 1199px) {
+    .jobs {
+        &__title,
+        &__subtitle {
+            z-index: 4;
+        }
+        & .main__project-link p:nth-child(1) {
+            font-size: 14px;
+        }
+        & .main__project-link p:nth-child(2) {
+            display: none;
+        }
+        & .main__project-link-decor {
+            pointer-events: none;
+            &--1 {
+                width: max-content;
+                height: max-content;
+                & .main__project-img {
+                    width: 420px;
+                }
+                & canvas {
+                    width: 650px;
+                }
+                & .main__project-link {
+                    transform: none !important;
+                    opacity: 1 !important;
+                }
+            }
+            &--2 {
+                width: max-content;
+                height: max-content;
+                right: -330px;
+                & .main__project-img {
+                    width: 944px;
+                }
+                & canvas {
+                    width: 650px;
+                }
+                & .main__project-link {
+                    transform: none !important;
+                    opacity: 1 !important;
+                }
+            }
+            &--3 {
+                width: max-content;
+                height: max-content;
+                & .main__project-img {
+                    width: 579px;
+                }
+                & canvas {
+                    width: 650px;
+                }
+                & .main__project-link {
+                    bottom: -5%;
+                    transform: none !important;
+                    opacity: 1 !important;
+                }
+            }
+            &--4 {
+                width: max-content;
+                height: max-content;
+                & .main__project-img {
+                    width: 806px;
+                }
+                & canvas {
+                    width: 650px;
+                }
+                & .main__project-link {
+                    bottom: 0px;
+                    transform: none !important;
+                    opacity: 1 !important;
+                }
+            }
+            &--5 {
+                width: max-content;
+                height: max-content;
+                display: none;
+                & canvas {
+                    width: 650px;
+                }
+                & .main__project-link {
+                    bottom: 50px;
+                    transform: none !important;
+                    opacity: 1 !important;
+                }
+            }
+            &--6 {
+                width: max-content;
+                height: max-content;
+                display: none;
+                & canvas {
+                    width: 650px;
+                }
+                & .main__project-link {
+                    bottom: 30%;
+                    transform: none !important;
+                    opacity: 1 !important;
+                }
+            }
+        }
+        .main__list {
+            padding: 650px 0;
+            pointer-events: none;
+            margin-top: -985px;
+            & .main__item {
+                pointer-events: all;
+                width: max-content;
+                height: max-content;
+                &--1 {
+                    top: 141px;
+                    left: -30px;
+                    right: unset;
+                    & .main__project-link {
+                        top: 100px;
+                        bottom: unset;
+                        right: -139px;
+                        left: unset;
+                    }
+                }
+                &--2 {
+                    top: 182px;
+                    right: -475px;
+                    left: unset;
+                    & .main__project-link {
+                        top: unset;
+                        right: unset;
+                        bottom: -25px;
+                        left: 244px;
+                    }
+                }
+                &--3 {
+                    bottom: 560px;
+                    left: -210px;
+                    & .main__project-link {
+                        bottom: -25px;
+                        top: unset;
+                        left: 240px;
+                    }
+                }
+                &--4 {
+                    bottom: 0;
+                    left: 0px;
+                    & .main__project-link {
+                        bottom: unset;
+                        top: 30%;
+                        left: unset;
+                        right: 109px;
+                    }
+                }
+                &--5 {
+                    top: 645px;
+                    & .main__project-link {
+                        bottom: 0;
+                        top: unset;
+                        left: 75px;
+                    }
+                }
+                &--6 {
+                    top: 235px;
+                    left: -66px;
+                    & .main__project-link {
+                        bottom: 0;
+                        top: unset;
+                        left: 75px;
+                    }
+                }
+                & .main__project-link p:nth-child(1) {
+                    border-bottom: 1px solid #B55A2B;
+                }
+                & .main__project-link p:nth-child(2) {
+                    font-family: $HelveticaNeue;
+                    font-size: 20px;
+                    line-height: 30px;
+                    text-transform: uppercase;
+                    color: #101010;
+                    margin: 0;
+                    max-width: 400px;
+                    text-align: left;
+                    margin-top: 15px;
+                }
+                & .main__project-link {
+                    border: none;
+                }
+            }
+        }
+    }
+    .jobs__title {
+        font-size: 96px;
+        line-height: 99px;
+    }
+}
+
+@media (min-width:0px) and (max-width: 767px) {
+    .jobs {
+        margin-top: 130px;
+    }
+    .jobs__title {
+        font-size: 48px;
+        line-height: 50px;
+    }
+    .jobs__item--1 {
+        position: static;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+    }
+    .jobs .main__list .main__item--1 .main__project-link {
+        top: unset;
+        bottom: unset;
+        right: 0;
+        left: unset;
+    }
+    .jobs__item--2 {
+        position: static;
+        margin-left: auto;
+        margin-right: auto;
+        transform: translateX(-100px);
+        margin-top: 50px;
+        & .main__project-link {
+            bottom: 0;
+        }
+    }
+    .jobs__item--3 {
+        position: static;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+    }
+    .jobs .main__list .main__item--3 .main__project-link {
+        left: 105px;
+        & p:nth-child(1) {
+            max-width: 140px;
+        }
+    }
+    .jobs__item--4 {
+        position: static;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+        & .main__project-link {
+            bottom: 0;
+        }
+    }
+    .jobs .main__project-link-decor--1 .main__project-img {
+        width: 340px;
+    }
+    .jobs .main__project-link-decor--2 .main__project-img {
+        width: 440px;
+    }
+    .jobs .main__project-link-decor--3 .main__project-img {
+        width: 440px;
+    }
+    .jobs .main__project-link-decor--4 {
+        display: none;
+    }
+    .jobs__title-wrapper {
+        position: static;
+        transform: none;
+    }
+    .jobs .main__list {
+        padding: 0;
+        margin-top: 0;
+        margin-bottom: 130px;
+    }
+    .jobs__more {
+        width: 131px;
+        height: 131px;
+    }
+    .jobs__more--mobile {
+        justify-content: center;
+        display: flex;
+        & a {
+            margin-top: 40px;
+        }
+    }
+    .jobs__more--desk {
+        display: none;
+    }
+    .jobs {
+        margin-top: 150px;
+    }
+    .jobs__title-wrapper {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 390px;
+    }
+    .jobs .main__list .main__item--2 .main__project-link {
+        left: 50px;
+    }
+}
+
+.main__project-link--hovered {
+    background: linear-gradient(90deg, #FAF9F7 9.45%, rgba(250, 249, 247, 0) 130.1%);
+    padding: 31px 84px 30px;
+    border-radius: 3px;
+}
+
+.jobs__item--1 .main__project-link--hovered {
+    background: linear-gradient(90deg, #FAF9F7 9.45%, rgba(250, 249, 247, 0) 130.1%);
+    padding: 30px 169px 30px 10px;
+}
+
+.jobs__item--6 .main__project-link--hovered {
+    background: linear-gradient(-90deg, #FAF9F7 9.45%, rgba(250, 249, 247, 0) 130.1%);
+    padding: 31px 15px 30px 360px;
+    left: 10%;
+}
+
+.main__item--4.jobs__item--4 .main__project-link-decor .main__project-link,
+.main__item--5.jobs__item--5 .main__project-link-decor .main__project-link,
+.main__item--6.jobs__item--6 .main__project-link-decor .main__project-link {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.main__item--4.jobs__item--4 .main__project-link-decor .main__project-link p,
+.main__item--5.jobs__item--5 .main__project-link-decor .main__project-link p,
+.main__item--6.jobs__item--6 .main__project-link-decor .main__project-link p {
+    text-align: right !important;
+}
+
+.main__item--4.jobs__item--4 .main__project-link-decor .main__project-link--hovered {
+    padding-left: 250px;
+    left: 5%;
+}
+
+.main__item--5.jobs__item--5 .main__project-link-decor .main__project-link--hovered {
+    left: 50%;
+    padding-left: 250px;
+}
